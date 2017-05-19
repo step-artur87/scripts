@@ -1,0 +1,5 @@
+xmodmap -e 'keycode 94=End'
+xmodmap -e 'keycode 127=Escape'
+xmodmap -e 'keycode 108=Alt_L'
+xmodmap -e 'keycode 72 = 6'
+xmodmap -e 'keycode 73 = comma'

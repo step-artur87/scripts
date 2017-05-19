@@ -1,0 +1,5 @@
+#!/bin/bash
+function tweet {
+  curl -u username:password -d status="$*" http://twitter.com/statuses/update.xml > /dev/null
+}
+
