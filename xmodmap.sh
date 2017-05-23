@@ -6,6 +6,8 @@
 #xmodmap -e "keycode 116 = Down KP_Down"
 #xmodmap -e "keycode 113 = Left KP_Left"
 
+#sleep 2m
+
 #mouse
 xmodmap -e "keycode 115 = Pointer_Button1 Pointer_Button3"
 
