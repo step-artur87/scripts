@@ -1,2 +1,2 @@
 #/bin/bash
-notify-send "$(readlink -f $0)"
+gedit notes
