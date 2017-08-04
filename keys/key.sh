@@ -1,5 +1,5 @@
 #/bin/bash
-cd /home/art/Scripts/keys/
+cd /home/art/scripts/keys/
 for i in $(ls -1 prog)
 #for i in $(ls -1 prog | sed -e "s/_/ /g")
 	do		
