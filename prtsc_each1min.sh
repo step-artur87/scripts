@@ -2,5 +2,5 @@
 while true
  do
 	./prtsc.sh
-	sleep 10m
+	sleep 1m
  done

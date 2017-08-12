@@ -1,5 +1,4 @@
 #!/bin/sh
-
 window=$(xdotool getwindowfocus getwindowname | sed -e "s/[\/ \~\-\(\)]//g")
 d=$(date +%y%m%d_%H%M%S)
 mkdir "/home/art/prtsc/$window"
