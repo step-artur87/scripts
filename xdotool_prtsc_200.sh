@@ -1,6 +1,6 @@
 #!/bin/sh
 sleep 5s
-while true	
+for i in $(seq 1 1 201) do
 do 
 xdotool key Insert
 sleep 2s
