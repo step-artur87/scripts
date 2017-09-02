@@ -1,0 +1,1 @@
+ lynx --dump http://lurkmore.to/Служебная:Random | grep -A1000 IPv6 | grep -B References > "$(ls | wc -l).txt"
