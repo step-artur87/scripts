@@ -5,6 +5,6 @@ do
 xdotool mousedown 1
 sleep 0.1
 xdotool mouseup 1
-sleep 0.1
+sleep 5
 done
 xdotool key Caps_Lock
