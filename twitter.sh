@@ -10,6 +10,6 @@ palemoon https://twitter.com/Vitauskas_A
 read i
 palemoon https://twitter.com/__Beardman_
 read i
-palemoon https://twitter.com/Judas0803
+https://twitter.com/Churchill_N1
 read i
 palemoon https://twitter.com/sergonaumovich/media
