@@ -1,6 +1,7 @@
 #!/bin/sh
+sleep 2s
 xdotool key Caps_Lock
-for i in $(seq 1 1 50) do
+for i in $(seq 1 1 100) do
 do 
 xdotool mousedown 1
 sleep 0.1
