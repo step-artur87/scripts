@@ -1,9 +1,8 @@
 #!/bin/sh
 #Changes keyboard to use xfce4-accessibility-settings with arrow keys
-
+setxkbmap -option "grp_led:scroll"
 #mouse
 xmodmap -e "keycode 115 = Pointer_Button1 Pointer_Button3 End End"
-xmodmap -e "keycode 94 = Pointer_Button1 Pointer_Button3"
 
 #Key changed without Num_Lock
 xmodmap -e "keycode 111 = KP_Up Up Up"

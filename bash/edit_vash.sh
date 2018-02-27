@@ -1,3 +1,3 @@
 #!/bin/sh
-cat 1.txt | sed -e "s/Поделиться/\n\n\n\n\n\n\n\n\n\n/g" -e "s/.*\\#.*//g" -e "s/\\+//g" \
-| grep -v "||||"
+cat bash1300-1200 | sed -e "s/\\#/\n \n \n \n \n \n \n \n \n \n /g"  \
+| grep -v "||||" | grep -v "[0-9][0-9][0-9][0-9][0-9][0-9]"> bash1300-1200_
