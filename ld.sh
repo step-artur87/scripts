@@ -1,2 +1,2 @@
-lynx --dump $2 > $1_.txt
+lynx --dump -width=1024 $2 > $1_.txt
 sleep 10s
