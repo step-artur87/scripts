@@ -1,2 +1,4 @@
 #!/bin/sh
-xdotool key super+d;sleep 6;xdotool key super+d
+xdotool key super+d
+sleep 30
+xdotool key super+d
