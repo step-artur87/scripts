@@ -1,2 +1,3 @@
 #/bin/bash
-notify-send "$(readlink -f $0)"
+#left mouse down
+xdotool mousedown 1

@@ -2,6 +2,5 @@
 while true
  do
 	./prtsc.sh
-	sleep 10s
-	xdotool key Page_Down
+	sleep 1s
  done

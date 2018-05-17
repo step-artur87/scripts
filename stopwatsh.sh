@@ -1,4 +1,5 @@
 #!/bin/sh
+cd /home/art/Documents/
 #date +"%s" > ~/Documents/date #if not work uncomment, run, comment
 a=$(date +"%s")
 #echo a$a
