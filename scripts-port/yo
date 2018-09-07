@@ -1,0 +1,3 @@
+#echo 1
+#echo 1 $(xsel -o -b)
+mpv --fullscreen --audio no --ytdl-format 18 $(xsel -o -b)
