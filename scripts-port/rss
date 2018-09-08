@@ -1,0 +1,12 @@
+cd /mnt/sda1/rss
+#curl "http://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2" > 1
+cat 1\
+| tee 2 \
+| grep webm \
+| tee 3 \
+| perl -npe s/.*src\=\"//g \
+| tee 4 \
+| perl -npe s/webm.*/webm/g \
+| tee 5 \
+ > list
+wget -i list
