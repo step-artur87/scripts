@@ -1,5 +1,5 @@
 cd /mnt/sda1/rss
-#curl "http://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2" > 1
+curl "http://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2" > 1
 cat 1\
 | tee 2 \
 | grep webm \
@@ -20,9 +20,13 @@ cat list | perl -npe s/.*\\///g  \
 > list3
 paste list3 list2 > list4
 
+mkdir links
+
 #bash row by row 
 
 wget -nc -i list
+
+cat lit4 | xargs -n2
 #what in perl (&)
 #what sound
 #del other
