@@ -9,6 +9,19 @@ cat 1\
 | perl -npe s/webm.*/webm/g \
 | tee 5 \
  > list
+
+cat 2 \
+| grep title \
+| perl -npe s/.*\<title\>//g \
+| perl -npe s/\<.*//g \
+>list2
+
+cat list | perl -npe s/.*\\///g  \
+> list3
+paste list3 list2 > list4
+
+#bash row by row 
+
 wget -nc -i list
 #what in perl (&)
 #what sound
