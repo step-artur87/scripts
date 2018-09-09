@@ -1,0 +1,3 @@
+cd /mnt/sda1/rss/
+echo "ln -s $1 links/$2"
+ln -sr $1 links/$2

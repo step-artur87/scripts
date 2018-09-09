@@ -1,0 +1,1 @@
+ xsel -o -b | while read r;do mpv -fs $r; sleep 5; done

@@ -1,5 +1,5 @@
 cd /mnt/sda1/rss
-curl "http://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2" > 1
+#curl "http://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2" > 1
 cat 1\
 | tee 2 \
 | grep webm \
@@ -14,6 +14,10 @@ cat 2 \
 | grep title \
 | perl -npe s/.*\<title\>//g \
 | perl -npe s/\<.*//g \
+| perl -npe "s/ /_/g" \
+| perl -npe "s/\:/_/g" \
+| perl -npe "s/\;/_/g" \
+| perl -npe "s/\#/_/g" \
 >list2
 
 cat list | perl -npe s/.*\\///g  \
@@ -24,9 +28,11 @@ mkdir links
 
 #bash row by row 
 
-wget -nc -i list
+#wget -nc -i list
+#ls -l webm 
 
-cat lit4 | xargs -n2
+cat list4 | xargs -n2 rss2
+
 #what in perl (&)
 #what sound
 #del other
