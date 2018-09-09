@@ -1,6 +1,8 @@
 cd /mnt/sda1/rss
-#curl "http://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2" > 1
-cat 1\
+
+curl "http://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2" > 1 #get rss file
+
+cat 1 \
 | tee 2 \
 | grep webm \
 | tee 3 \
@@ -8,7 +10,7 @@ cat 1\
 | tee 4 \
 | perl -npe s/webm.*/webm/g \
 | tee 5 \
- > list
+ > list #get url list
 
 cat 2 \
 | grep title \
@@ -18,21 +20,16 @@ cat 2 \
 | perl -npe "s/\:/_/g" \
 | perl -npe "s/\;/_/g" \
 | perl -npe "s/\#/_/g" \
->list2
+>list2 #egt title list
 
 cat list | perl -npe s/.*\\///g  \
-> list3
-paste list3 list2 > list4
+> list3 #get filename list
 
+paste list3 list2 > list4 # get filename title list
+
+rm -r links
 mkdir links
 
-#bash row by row 
+wget -nc -i list #download adds
 
-#wget -nc -i list
-#ls -l webm 
-
-cat list4 | xargs -n2 rss2
-
-#what in perl (&)
-#what sound
-#del other
+cat list4 | xargs -n2 rss2 #run rss2, if error add scripts_port to .bashrc
