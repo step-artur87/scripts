@@ -25,5 +25,5 @@ PS2='> '
 #
 # This change broke mc arrow buttons.
 alias mcedit='TERM=xterm-new mcedit'
-export PATH="$PATH:/mnt/sda1/scripts/scripts-port"
+export PATH="$PATH:/mnt/sda2/scripts/scripts-port/"
 xmodmap -e "keycode 96 = F11"
