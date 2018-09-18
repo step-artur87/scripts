@@ -1,4 +1,5 @@
-cd /mnt/sda1/rss
+cd /mnt/sda3/rss
+cd /dev/shm/
 
 curl "http://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2" > 1 #get rss file
 
@@ -27,7 +28,7 @@ cat list | perl -npe s/.*\\///g  \
 
 paste list3 list2 > list4 # get filename title list
 
-rm -r links
+#rm -r links
 mkdir links
 
 wget -nc -i list #download adds

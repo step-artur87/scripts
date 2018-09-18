@@ -1,1 +1,5 @@
-echo $* | xargs palemoon
+cat /mnt/sda2/scripts/scripts-port/links | while read r
+do
+echo $r
+read $i
+done

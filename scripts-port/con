@@ -1,0 +1,5 @@
+cat ~/pass | xsel -i -b
+xdotool mousemove 1116 20
+xdotool click 1
+xdotool mousemove 746 250 click 1
+xdotool key e n l i g h t m e n t Return

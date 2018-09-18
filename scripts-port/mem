@@ -1,0 +1,16 @@
+while true
+do
+	r=$(top -n 1 -b | grep Mem |grep Swap | cut -c 60-62)
+	echo $r
+	#notify-send $r
+if test $r -lt 75
+	then
+	echo away
+		killall palemoon
+		killall palemoon
+		killall palemoon
+		killall palemoon
+palemoon
+	fi
+	sleep 10
+done

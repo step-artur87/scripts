@@ -1,0 +1,7 @@
+seq 1000 1 1400 \
+| while read r
+do
+	echo $r
+	lynx --dump --width 10000 --display_charset UTF-8 https://bash.im/index/$r > $r
+	sleep 1
+done 
