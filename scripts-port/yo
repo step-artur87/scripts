@@ -1,3 +1,4 @@
-#echo 1
-#echo 1 $(xsel -o -b)
+while true
+do
 mpv --fullscreen --audio no --ytdl-format 18 $(xsel -o -b)
+done

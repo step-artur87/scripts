@@ -1,5 +1,2 @@
-cat /mnt/sda2/scripts/scripts-port/links | while read r
-do
-echo $r
-read $i
-done
+cp -rn "/mnt/sda3/guest/.moonchild productions" /dev/shm
+ln -s /dev/shm/.moonchild\ productions
