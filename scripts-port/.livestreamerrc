@@ -1,0 +1,23 @@
+http-header=Client-ID=qweqweqweqweqwe
+
+
+
+sudo
+    1  pip install --upgrade pip
+   13  pip install livestreamer
+
+Step 1. Type livestreamer --twitch-oauth-authenticate. Chrome will open and ask you to login to twitch. It will give you a "page does not exist" error. FeelsBadMan
+Step 2. Check the url. It has a section that says access_token=xxxxxxxxxxxxxxxxxxxxxxxx. Copy this string.
+Step 3. Continue watching livestreamer as usual. However, when opening a stream, it should read
+livestreamer --twitch-oauth-token xxxxxxxxxxxxxxxxxxxx twitch.tv/channel best
+
+   You can just put the following line in your livestreamerrc file:
+http-header=Client-ID=jzkbprff40iqj646a697cyrvl0zt2m6
+
+
+
+
+
+
+
+
