@@ -1,0 +1,42 @@
+#set -x
+echo _if not work, run after script echo \$\?
+####mkdir all
+mkdir /mnt/sda2/backup/ /mnt/sda2/backup/automusor /mnt/sda2/backup/Photo \
+/mnt/sda2/backup/Video /mnt/sda2/backup/My\ Music /mnt/sda2/backup/Ebook
+
+####move all empty files from hdd to automusor
+cd /mnt/sda1/
+find . -maxdepth 1 -type d -empty -exec mv -f '{}' /mnt/sda2/backup/automusor/ \;
+cd /mnt/sda2/
+find . -maxdepth 1 -type d -empty -exec mv -f '{}' /mnt/sda2/backup/automusor/ \;
+cd /mnt/sda3/
+find . -maxdepth 1 -type d -empty -exec mv -f '{}' /mnt/sda2/backup/automusor/ \;
+
+echo Phone connected? Return=y, Ctrl+c=n
+read r
+
+cd /mnt/sdb1/ || exit $LINENO  #exit if no phone
+
+####copy empty to /mnt/sda2/backup/automusor/
+find . -maxdepth 1 -type d -empty -exec mv -f '{}' /mnt/sda2/backup/automusor/ \;
+
+####move Photos, Video My\ Music to backup
+mv /mnt/sdb1/Photos /mnt/sda2/backup/Photo/Photo$(date +%s)
+mv /mnt/sdb1/Video /mnt/sda2/backup/Video/Video$(date +%s)
+mv /mnt/sdb1/My\ Music /mnt/sda2/backup/My\ Music/My\ Music$(date +%s)
+
+####copy .bmk filed to backup TODO cp bmk at Ebook recuures
+find . -name \*.BMK -exec cp -f {} /mnt/sda2/backup/Ebook \;
+
+####archive backup
+zip -rvT /mnt/sda2/archive/2dropbox/backup$(date +%s).zip /mnt/sda2/backup || exit $LINENO  #can not create archive
+
+echo Do you need push to dropbox?  Return=y, Ctrl+c=n
+read r
+
+####dropbox archive
+/./mnt/sda2/archive/Dropbox-Uploader/dropbox_uploader.sh upload /mnt/sda2/archive/2dropbox/* / \
+&& mv -f /mnt/sda2/archive/2dropbox/* /mnt/sda2/archive/dropboxed \
+&& rm -r /mnt/sda2/backup || exit $LINENO  #can not dropbox
+
+#TODO if empty folder at photo, mv all newer files to folder
