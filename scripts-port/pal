@@ -1,2 +1,5 @@
-cp -rn "/mnt/sda3/guest/.moonchild productions" /dev/shm
-ln -s /dev/shm/.moonchild\ productions
+>/dev/shm/webappsstore.sqlite
+>/dev/shm/session.rdf
+>/dev/shm/places.sqlite
+mkdir /dev/shm/moonchild\ productions
+brightness.sh 4
