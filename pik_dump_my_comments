@@ -1,0 +1,14 @@
+wmctrl -R Light
+seq 1 1 10 | while read r
+do
+echo $r
+light https://m.pikabu.ru/commented.php\?page=$r
+sleep 4
+xdotool key Ctrl+a	
+sleep 2
+xdotool key Ctrl+c
+sleep 2
+xdotool key Ctrl+w
+xsel -o -b > /home/disk/Folders/pik/$(date +%s)-$r
+done
+

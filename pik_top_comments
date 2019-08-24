@@ -1,0 +1,8 @@
+light-firefox https://m.pikabu.ru/top-comments
+watchclip pikabu | while read r
+do
+	echo get $r
+	light-firefox "$(echo $r | sed -e s/\?.*//g)"
+done
+
+#| perl -npe s/pikabu/m.pikabu/g 
