@@ -1,0 +1,100 @@
+   34  git add *
+   35  git add *
+   36  git status
+   37  git clone github.com/step-artur87/scripts
+   38  git clone github.com/step-artur87/scripts
+   39  git clone github.com/step-artur87/scripts.git
+   40  git clone https://github.com/step-artur87/scripts
+   48  git status
+   51  git clone https://github.com/step-artur87/scripts
+   52  git help m
+   53  git help mkdir
+   55  git help mv
+   56  git help mv
+   57  git mv -n * ... old-cloned/
+   58  git mv * ... old-cloned/
+   59  git status
+   60  git mv * ... old-cloned/
+   65  ##git 1)mv to old2) add port to new 3)mv to sr
+   94  git mv *!(old-cloned) ... old-cloned/
+  100  ls | grep -v old-cloned | xargs -I num -n1 git mv num ... old-cloned/
+  111  git mv -n *(cat ls) ... old-cloned/
+  112  git mv -n $(cat ls) ... old-cloned/
+  116  ls | grep -v old-cloned | xargs -I num -n1 git mv num ... old-cloned/
+  118  ls | grep -v old-cloned | xargs -I num -n1 git mv num old-cloned/
+  119  git mv -n $(cat ls) ... old-cloned/
+  121  git mv -n $(cat ls) ... old-cloned/
+  122  git mv $(cat ls) ... old-cloned/
+  123  git mv -n ... old-cloned/
+  124  git mv -n * ... old-cloned/
+  126  git mv -n * ... old-cloned/
+  127  git mv -fn * ... old-cloned/
+  128  git mv -f * ... old-cloned/
+  132  git mv -n * ... .old-cloned/
+  134  git mv -n $(cat ls) ... .old-cloned/
+  135  git status
+  136  git status
+  137  git add old-cloned/
+  138  git status
+  139  git commmit -m old-cloned
+  140  git commit -m old-cloned
+  141  git config --global user.email step.artur87@gmail.com
+  142  git config --global user.name step-artur87
+  143  git commit -m old-cloned
+  144  git status
+  145  git mv -n -k * ... old-cloned/
+  146  git mv -k * ... old-cloned/
+  147  git status
+  148  git add *
+  149  git status
+  150  git commit -m old-cloned
+  151  git add *
+  152  git status
+  153  git commit -m scripts-port
+  154  git push
+  155  git push
+  156  git push
+  157  git status
+  158  git status
+  159  git status
+  160  ##|git cloneznow
+  161  git mv -n scripts-port/rss* .
+  162  git mv scripts-port/rss* .
+  163  git status
+  164  git add *
+  165  git status
+  166  git commit -m rss
+  167  git mv -n scripts-port/ch* .
+  168  git mv scripts-port/ch* .
+  169  git status
+  170  git  commit -m ch*
+  171  git mv -n scripts-port/pik* .
+  172  git mv  scripts-port/pik* .
+  173  git status
+  175  git status
+  176  git checkout
+  177  git checkout -f
+  178  git status
+  179  git status
+  180  git mv  scripts-port/pik* .
+  181  git status
+  182  git commit -m pik*
+  183  git status
+  184  git checkout -f
+  185  git status
+  186  git status
+  187  git checkout -f
+  188  git status
+  189  git mv scripts-port/pik .
+  190  git status
+  191  git commit -m pik (err)
+  192  git commit -m pik2
+  193  git rm scripts-port/pik*
+  194  git rm scripts-port/pik
+  195  git status
+  196  git status
+  197  git commit pik3
+  198  git commit -m pik3
+  199  git status
+  200  git push
+  201  history | grep git >how_to_gitmv_gitrm
