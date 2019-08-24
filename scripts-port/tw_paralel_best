@@ -1,0 +1,10 @@
+watchclip twitch | while read r
+#watchclip send to stack and cycle read from stck (when player close, read next vlue)
+do
+	mousepad $r
+	tw-cooldown &
+	notify-send get $r
+	echo get $r
+	echo $r >> /mnt/sda2/files/twitchlog
+	streamlink $r 1080p,900p,810p,768p,720p,576p,540p,512p,480p,460p,360p,320p &
+done

@@ -1,0 +1,1 @@
+xdotool key $(xsel -o -b)

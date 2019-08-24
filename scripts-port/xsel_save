@@ -1,0 +1,4 @@
+#save clipboard
+d=$(date +%s)
+xsel -o -b >  /mnt/sda7/dropbox/$d.pgn
+#xboard $d.pgn

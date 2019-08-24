@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=watch best post from ppikabu and oppen m.pik from clb (pk)
+Comment=launcher
+Exec=/mnt/sda2/scripts/scripts-port/pk
+Icon=
+Path=
+Terminal=true
+StartupNotify=true

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=copy to clip history from palemoon (hist)
+Comment=launcher
+Exec=/mnt/sda2/scripts/scripts-port/hist
+Icon=
+Path=
+Terminal=true
+StartupNotify=true

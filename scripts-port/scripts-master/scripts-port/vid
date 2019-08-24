@@ -1,0 +1,7 @@
+xsel -o -b | while read r
+do
+echo $(echo $r  | perl -npe s/.*\\///g)
+sleep 2
+mpv --really-quiet -fs $r &>/dev/null
+#--loop
+done

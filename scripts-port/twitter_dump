@@ -1,0 +1,8 @@
+for i in $(cat scripts-port/twitter_list)
+do
+lynx --dump --width=1000 $i | grep -B10 replies | grep -v -F -f scripts-port/ungrep | perl -pe "s/\[\d//g" | more & # todo grep -v -P "^\d+$" and ^More$ "3 replies 74 retweets 187 likes" #todo more or less
+#not in terminel byt > file; light file
+light $i
+read r
+done
+

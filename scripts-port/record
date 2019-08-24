@@ -1,0 +1,4 @@
+lynx --dump $1 | grep -C4 Age:
+netsurf-gtk roomimg.stream.highwebmedia.com/ri/$(echo $1 | sed -e  s/.*chaturbate.com//g -e s/\\///g).jpg &
+streamlink -O $1 720p,900p,810p,1080p,768p,576p,540p,512p,480p,460p,360p,320p | tee $(date +%s) | mpv -
+#streamlink -o $(date +%s) $1 720p,900p,810p,1080p,768p,576p,540p,512p,480p,460p,360p,320p

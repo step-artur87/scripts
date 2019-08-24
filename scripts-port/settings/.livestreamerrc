@@ -1,0 +1,2 @@
+http-header=Client-ID=*
+player=mpv -fs --no-audio 

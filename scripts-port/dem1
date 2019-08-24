@@ -1,0 +1,15 @@
+echo ned js for firest dems and afteer eed not
+cat "$*" | grep -a target | perl -npe s/\"/\\n/g | grep pic > /dev/shm/2
+echo insrt last vieves and preenter
+while read r
+do
+	echo begin $r
+	for i in $(cat /dev/shm/2 | grep -A 50 $r) 
+	do
+	echo $i	
+	light  $i &
+	echo $i >> 3
+
+	sleep 2
+	done
+done

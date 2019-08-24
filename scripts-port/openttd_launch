@@ -1,0 +1,8 @@
+echo btpro
+lynx --dump http://openttd.btpro.nl/index.php/currently-playing/all-servers-overview | grep -A10 STEAM | grep %
+echo n-ice
+lynx --dump http://www.n-ice.org/openttd/servers.php | grep -A10 STEAM | grep %
+echo laucnh openttd&
+read r
+openttd
+

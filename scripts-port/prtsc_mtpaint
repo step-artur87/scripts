@@ -1,0 +1,2 @@
+import -window root "/dev/shm/1.png" 
+mtpaint /dev/shm/1.png

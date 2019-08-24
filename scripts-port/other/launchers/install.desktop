@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=instll porteus to sda1 (install)
+Comment=launcher
+Exec=/mnt/sda2/scripts/scripts-port/install
+Icon=
+Path=
+Terminal=true
+StartupNotify=true

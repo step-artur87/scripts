@@ -1,0 +1,6 @@
+while true
+do
+#not read r if diff
+xsel -o -b | perl -npe s/.*chaturbate.com\\///g | perl -npe s/\\///g | xargs -I num palemoon chaturbate.com/fullvideo?b=num
+read r
+done

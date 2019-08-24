@@ -1,0 +1,942 @@
+#killall light
+firefox https://m.pikabu.ru/freshitems.php
+set -x
+dosexit /home/disk/dos/antrun30/ANTRUN.EXE
+set -x
+dosexit /home/disk/dos/antrun30/ANTRUN.EXE
+#backup all
+cd /media/art/79E8-2673/ || echo Not Flash
+cd /media/art/79E8-2673/ || exit
+rm -r /home/art/.local/share/TelegramDesktop/
+
+mkdir -p /media/art/79E8-2673/backup_flash_deb/home/
+cp -ruv /home/art /media/art/79E8-2673/backup_flash_deb/home/
+cp -ruv /home/disk /media/art/79E8-2673/backup_flash_deb/home/
+
+#no -L, --dereference            always follow symbolic links in SOURCE
+#system not support symlink
+#  -p                           same as --preserve=mode,ownership,timestamps
+#  -R, -r, --recursive          copy directories recursively
+#  -u, --update                 copy only when the SOURCE file is newer
+#  -v, --verbose                explain what is being done
+#u copy time > change time
+#no p copy-time -> dest-time
+#p from-time -> dest-time
+cat "$*" | grep -C2 -P "(^\\—)|(\\:$)" > book.txt
+gedit book.txt
+
+#!/bin/sh
+cd ~/ete 
+xsel -o -b | grep -B1000 Buying | sed "s/[0-9].*//g" | sort -u |	grep -P . | grep -ivF -f book_no_need | grep -ivF -f book_learned > book_list
+xsel -o -b | grep -B1000 Buying |					grep -P . | grep -viF -f book_no_need | grep -ivF -f book_learned > books_info
+date >> book_list
+gedit book_list books_info
+cd /home/art/ete/
+mkdir -p bots$(date +%F) && \
+cd bots$(date +%F) && \
+lynx --dump http://bots.el-services.net/index.php | grep php | sed -e s/.*\\s//g | xargs -n1 lynx --dump >> 1
+#xrandr --output VGA1 --brightness 0.$1
+xrandr --output VGA1 --gamma 1.5:1:0.8 --brightness 0.$1
+ffmpeg -f x11grab -s 1280x1024 -r 2  \
+-i :0.0+0,0 /dev/shm/$(date +%s).avi
+
+mkdir /dev/shm/
+
+xsel -o -b | sed -e s/?.*//g > 
+#chb best quality
+#untested
+#todo sed from images and from tittle
+echo launch ch choose  close gedit and when seing lauinch chb
+echo mouse net zapasy wstilka shtany shorty tb wuha rukavitsi
+echo if littlepinkald open li,  if not - netsurf
+echo video lauchch after closing gedit
+echo KOROBKA
+mem &
+watchclip chaturbate | while read r
+do
+	echo get $r
+	lynx --dump $r | grep -C4 Age:
+	#echo $r | sed -e s/chaturbate.com/roomimg.stream.highwebmedia.com\\/ri/g |sed -e s/\$/.jpg/g |sed -e s/\\/.jpg/.jpg/g | xargs netsurf-gtk &
+	s $r
+done
+
+watchclip roomimg | while read r
+do
+	s=$(echo $r | sed -e s/.*\\/ri\\///g -e s/.jpg.*//g)
+	echo $s
+	s https://chaturbate.com/$s
+done
+#download pictures without chgrep_del
+cd /dev/shm/
+mkdir chaturbate.com
+cd chaturbate.com
+rm  /dev/shm/chaturbate.com/* #rm  /dev/shm/*rm  /dev/shm/*rm  /dev/shm/*rm  /dev/shm/*rm  /dev/shm/*
+lynx --dump https://chaturbate.com/20to30-cams/female/ \
+| grep chaturbate.com \
+| grep -v -P "\/\/.*\/.*\/.*\/" \
+| grep  -P "\/\/chaturbate.com\/.*\/$" \
+| grep -v cams \
+| perl -npe "s/.* //g" \
+| sort | uniq \
+|sed -e s/chaturbate.com/roomimg.stream.highwebmedia.com\\/ri/g \
+|sed -e s/\$/.jpg/g \
+|sed -e s/\\/.jpg/.jpg/g \
+>1
+lynx --dump https://chaturbate.com/female-cams/?page=2 \
+| grep chaturbate.com \
+| grep -v -P "\/\/.*\/.*\/.*\/" \
+| grep  -P "\/\/chaturbate.com\/.*\/$" \
+| grep -v cams \
+| perl -npe "s/.* //g" \
+| sort | uniq \
+|sed -e s/chaturbate.com/roomimg.stream.highwebmedia.com\\/ri/g \
+|sed -e s/\$/.jpg/g \
+|sed -e s/\\/.jpg/.jpg/g \
+>>1
+wget -i 1
+thunar /dev/shm/chaturbate.com/#run script press for window with image and sccript run streamlink
+xprop | grep -i _NET_WM_NAME | grep -i utf |grep jpg | sed -e s/.jpg.*//g -e s/.*\"/chaturbate\.com\\//g | xargs -I num streamlink num 720p
+#run script press for window with image and sccript run streamlink
+r=$(xprop | grep -i _NET_WM_NAME | grep -i utf |grep jpg | sed -e s/.jpg.*//g -e s/.*\"/chaturbate\.com\\//g) 
+lynx --dump $r | grep -C4 Age:
+s $r
+#run script press for window with image and sccript run streamlink
+echo chb, press enter, choose picture
+while true
+do
+xprop | grep -i _NET_WM_NAME | grep -i utf |grep jpg | sed -e s/.jpg.*//g -e s/.*\"/chaturbate\.com\\//g | xsel -i -b
+read r
+done
+#download pictures without chgrep_del
+cd /dev/shm/
+mkdir chaturbate.com
+cd chaturbate.com
+rm  /dev/shm/chaturbate.com/* #rm  /dev/shm/*rm  /dev/shm/*rm  /dev/shm/*rm  /dev/shm/*rm  /dev/shm/*
+xsel -o -b \
+| sort \
+| sed -e s/?.*//g \
+>1
+wget -i 1
+thunar /dev/shm/chaturbate.com/
+littlepinkald
+chelseareignxxx
+ellaa91
+jollenne
+#tech
+affiliates
+apps
+billingsupport
+jobs
+law_enforcement
+privacy
+sitemap
+terms
+tube
+cd /home/disk/scripts-port/links
+ls -1
+read r
+./"$(ls -1 | sed s/\*//g | grep $r)"
+
+
+echo "Choose thing"
+echo "1)pik"
+echo "2)twitter"
+echo "3)rss"
+echo "4)twitch"
+echo "5)gorkiy_look"
+echo "6)chess/draughts"
+echo "7)openttd"
+echo "8)granpri"
+echo "9)antrun"
+read n
+
+case $n in
+     1)
+	pik
+        ;;
+     2)
+        twitter
+        ;;
+     3)
+        rss
+        ;;
+     4)
+        rss
+        ;; 
+     5)
+        rss
+        ;; 
+     6)
+        rss
+        ;; 
+     7)
+        rss
+        ;; 
+     8)
+        rss
+        ;; 
+     9)
+        rss
+        ;; 
+     10)
+        rss
+        ;; 
+
+     *)
+        echo "Nothing aproprate"
+        ;;
+esac
+sleep 1
+xdotool  search --name DOSBOX search --namecompiz --replace ccp & emerald --replace &
+echo croptop,cropright,cropdown,cropleft
+streamlink --player="vlc --video-filter=croppadd{croptop=$2,cropright=$3,cropdown=$4,cropleft=$5}" $1 720p,900p,810p,1080p,768p,576p,540p,512p,480p,460p,360p,320p
+
+lynx --nolist --dump https://m.1xnag.world/line/eSports/ | grep -A1000 Filter\ markets | grep -B1000 About\ us | grep -A4 eSports | grep --color -A4 -e eSports.*
+while read r
+do
+echo $1 $r $(date +%s) >>sda2/day
+done
+light "duckduckgo.com/html?q=$*" &
+echo ned js for firest dems and afteer eed not
+cat "$*" | grep -a target | perl -npe s/\"/\\n/g | grep pic > /dev/shm/2
+echo insrt last vieves and preenter
+while read r
+do
+	echo begin $r
+	for i in $(cat /dev/shm/2 | grep -A 50 $r) 
+	do
+	echo $i	
+	light  $i &
+	echo $i >> 3
+
+	sleep 2
+	done
+done
+echo autospawn = no > $HOME/.config/pulse/client.conf
+pulseaudio --kill
+#doslock &
+thunar /mnt/sda2/dos/
+watchclip dos | while read r
+do
+notify-send $(xsel -o -b)
+dosbox -exit $(xsel -o -b)
+done
+dosbox -exit $1
+echo doslock laun
+watch -n 300 killall -s STOP dosbox
+while true
+do
+dosbox -exit $1
+done
+#upload files from folder dropbox
+#set -x
+####dropbox archive
+/./home/art/dropbox/Dropbox-Uploader/dropbox_uploader.sh upload /home/art/dropbox/2dropbox/* / \
+&& mv -f /home/art/dropbox/2dropbox/* /home/art/dropbox/dropboxed
+#help for eternal lands 
+cat /home/art/ete/list | grep -i $1 
+for i in $(cat /home/art/ete/list | grep -i $1 )
+do
+	echo $i
+	read r
+	echo $r
+	if [ $r ]
+	then
+		netsurf-gtk  https://www.el-wiki.net/$i &
+	fi	
+done
+
+echo wait:load game,  return-password, load 3d
+#history | grep \#\#ete
+cd ~/eternallands/
+echo if not game edit scr
+./eternallands.sh &
+sleep 20
+netsurf-gtk bots.el-services.net &
+netsurf-gtk www.el-wiki.net &
+exit
+cd /mnt/sda2/ete/
+mkdir -p $(date +%f)
+cp -n p.png $(date +%f)
+cp -n a.png $(date +%f)
+cp -n h.png $(date +%f)
+cd $(date +%f)
+mtpaint *
+history | grep \#\#ete
+cd ~/eternallands/
+echo if not game edit scr
+./eternallands.sh &
+xsel -o -b | grep ete/monsters | notify-send -
+#cat /home/art/.elc/main/chat_log_201903.txt \
+#| grep --color -e "exp for Harvest" -e "Log started at" -e aleph87 \
+#| grep -B10 "exp for Harvest" \
+#| tail
+cat /home/art/.elc/main/chat_log_201903.txt \
+| grep --color -e "exp for Harvest" -e "Log started at"
+echo open items not tested
+echo attention see /home/disk/factorio_blueprints
+/home/disk/factorio_planner
+disable_audio
+d=$(date +%s)
+#cp new
+cp /home/disk/factorio_planner/main.bmp /home/disk/factorio_planner/main$d
+mtpaint /home/disk/factorio_planner/main$d &
+cp /home/disk/factorio_planner/items /home/disk/factorio_planner/items$d
+mtpaint /home/disk/factorio_planner/items$d &
+/./home/nobackup/factorio/factorio/bin/i386/factorio &
+echo "/c game.speed=0.5; /c game.forces["enemy"].kill_all_units(); /c game.forces["enemy"].evolution_factor=0;/c game.map_settings.enemy_expansion.enabled = false" | xsel -i -b
+echo needed copied
+echo "/c game.speed=0.5"
+echo "game.player.force.character_build_distance_bonus = 10000"
+echo "game.player.force.character_reach_distance_bonus = 10000"
+echo "/c game.forces["enemy"].evolution_factor=0"
+echo "/c game.forces["enemy"].kill_all_units()"
+echo "/c game.map_settings.enemy_expansion.enabled = false"
+
+echo "/c game.player.surface.always_day=true"
+echo "/c game.player.cheat_mode=true"
+echo "/c game.player.force.research_all_technologies()"
+echo "/c game.player.surface.peaceful_mode  = true"
+
+#eog /home/disk/factorio_planner/main.bmp
+
+
+#netsurf https://wiki.factorio.com/Console#World_manipulation_scripts
+
+#in random moments print ly bh.im anddrukuvaty
+#if cron each 10m
+sleep random 1-10m print text
+notify-send "$(ly --dump pikabu.ru/top-comments | grep -v -e "[a-zA-Z0-9]" | grep -B1000 Регистрация | shuf -n 5)"
+eval $(xdotool getmouselocation --shell);echo xdotool mousemove $X $Y  click 1 | xsel -i -b
+mkdir /mnt/sda7/dropbox/gl
+cd /mnt/sda7/dropbox/gl
+mkdir gorky-look.livejournal.com
+lynx --dump --display_charset UTF-8 https://gorky-look.livejournal.com/2019/07/ |grep html |grep gorky-look | sed s/.*gorky-look/gorky-look/g >all
+for r in $(cat all)
+do
+	echo $r
+	if [ ! -s $r ] 
+	then
+		echo d $r
+		lynx --dump -width=1000 --display_charset UTF-8 https://$r | grep -B1000 -F "Tags: " | grep -A1000 -F "Share"  > $r
+		mousepad $r &
+		sleep 1
+	fi
+done
+set -x
+dosbox  /home/disk/dos/Pgp/PGP.EXE &
+exit
+sleep 15	
+xdotool key Caps_Lock
+sleep 1
+xdotool  search --name DOSBox* key Escape
+sleep 0.25
+xdotool  search --name DOSBox* key Up
+sleep  0.25
+xdotool  search --name DOSBox* key Down
+sleep  0.25
+xdotool  search --name DOSBox* key Right
+sleep  0.25
+xdotool  search --name DOSBox* key Down
+sleep  0.25
+xdotool  search --name DOSBox* key Return
+sleep  0.25
+xdotool  search --name DOSBox* key Return
+sleep  0.25
+xdotool  search --name DOSBox* key Right
+sleep  0.25
+xdotool  search --name DOSBox* key Right
+sleep  0.25
+xdotool  search --name DOSBox* key Right
+#sleep  0.25
+#xdotool  search --name DOSBox* key Return
+#xdotool key Caps_Lock
+sleep 5
+wmctrl -R DOS
+
+xsel -o -b | grep -B1000 Buying| grep -F -f /home/art/scripts-port/listmap | grep -v -P "4..\..."
+Irilion
+Aeth
+Aelfan
+Arius
+Bethel
+Egratia
+Emerald
+Glacmor
+Hulda
+Hurquin
+Idaloran
+Imbroglio
+Irinveron
+Irsis
+Iscalrith
+Forgotten
+Kusamura
+Jungle
+Melinis
+Redmoon
+Palon
+Vertas
+Anitora
+Sedicolis
+Redmoon
+Thelinor
+Trassian
+Willowvine
+Forest
+Zirakinbar
+echo $1 $(date)>>/home/disk/Folders/texts/log
+lynx -nopause --display_charset UTF-8 -accept_all_cookies -use_mouse $*
+ly "duckduckgo.com/html?q=$*" 
+#help about one word
+$1 --help | grep -i --color $2
+#TODO LST CREENHOOT
+cd ~/.openttd/screenshot/
+new=$(ls -t1 | head -1)
+echo $new
+mv "$new" 1.png
+./skew  -a 26.5 -m degrees -d r2b 1.png 2.png
+./skew  -a 45 -m degrees -d b2l 2.png 3.png
+convert 3.png -scale 25% "_$new"
+mtpaint "_$new"
+#TODO LST CREENHOOT
+cd /home/guest/.openttd/screenshot/
+new=$(ls -t1 | head -1)
+echo $new 
+convert  $new -scale 25% q.png
+./skew  -a 26.5 -m degrees -d r2b q.png w.png
+./skew  -a 45 -m degrees -d b2l w.png _$new.png
+
+#convert  e.png -scale   400%  r.png
+#convert  r.png -crop 1500x1000-700+0  t.png
+#TODO CROP todo change color litegreen to 1 darkgreen to 2
+
+mtpaint _$new
+echo блыцкриг обнымашки | md5sum
+while true
+do
+	r=$(top -n 1 -b | grep Mem |grep Swap | cut -c 60-62)
+	echo $r
+	if test $r -lt 70
+	then
+		notify-send $r
+	fi
+	if test $r -lt 55
+		then
+		killall light-firefox
+		killall mpv
+#		rm -rf .cache/
+	fi
+	sleep 10
+done
+while true
+do
+	r=$(top -n 1 -b | grep Mem |grep Swap | cut -c 60-62)
+	echo $r
+	if test $r -lt 70
+	then
+		notify-send $r
+	fi
+	if test $r -lt 55
+		then
+		killall light-firefox
+		killall mpv
+#		rm -rf .cache/
+	fi
+
+	r1=$(top -n 1 -b | grep -e light -e mpv | wc -l) #exit script if no light-firefox no mpv
+	if test $r1 -lt 1
+	then
+	echo no light-firefox, mpv, exit
+		exit 0
+	fi
+	sleep 10
+done
+date +%d
+echo  Moonrise Moonset Moonrise Time Distance Illumination
+lynx --nolist --dump https://www.timeanddate.com/moon/@813237 | grep -A60 "Moonrise Moonset Moonrise Time Distance" | grep -B60 "All times are local time for Vinnitsa"  | grep -v at | grep --color -P "\d\d\:\d\d"
+
+cd scripts-port
+cp backup_flash $1
+gedit $1
+
+echo btpro
+lynx --dump http://openttd.btpro.nl/index.php/currently-playing/all-servers-overview | grep -A10 STEAM | grep %
+echo n-ice
+lynx --dump http://www.n-ice.org/openttd/servers.php | grep -A10 STEAM | grep %
+echo laucnh openttd&
+read r
+openttd
+
+sleep .5
+xdotool key Next
+lynx -nopause --display_charset UTF-8 -accept_all_cookies -use_mouse --list_inline --dump pikabu.ru \
+> /dev/shm/pik
+gedit /dev/shm/pik &
+light-firefox pikabu.ru &
+watchclip pikabu | while read r
+do
+echo "$r"
+light-firefox "$r"
+done
+
+
+## no inline waatchclip number and grep link not can becaause --list-inline can not open file
+##todo no site to stdout
+wmctrl -R Light
+seq 1 1 10 | while read r
+do
+echo $r
+light https://m.pikabu.ru/commented.php\?page=$r
+sleep 4
+xdotool key Ctrl+a	
+sleep 2
+xdotool key Ctrl+c
+sleep 2
+xdotool key Ctrl+w
+xsel -o -b > /home/disk/Folders/pik/$(date +%s)-$r
+done
+
+sleep 2 
+while true
+do
+xdotool key End
+sleep 1
+xdotool mousemove 10 750
+sleep 1
+xdotool click 1
+sleep 1
+done
+echo if not work rut pikavu_fles /path/to/saved/file
+xsel -o -b \
+| sed s/Иллюстрация\ к\ комментарию//g \
+| sed s/ещё\ комментарии.*//g \
+| grep -v -x 0 \
+| tac | sed '/назад/I,+1 d' | tac \
+| sed -e s/.*назад.*/\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n/g \
+| grep -P -A10 "\+\d\d" \
+| grep -v -P "^\+\d"  \
+| grep -v -P "^\-\d" \
+| sed s/--/------------------------------------------------/g \
+| cat -s \
+> ~/pikabu
+mousepad ~/pikabu
+#| head -n60;exit 0light-firefox https://m.pikabu.ru/top-comments
+watchclip pikabu | while read r
+do
+	echo get $r
+	light-firefox "$(echo $r | sed -e s/\?.*//g)"
+done
+
+#| perl -npe s/pikabu/m.pikabu/g 
+notify-send 1
+xdotool mousemove_relative -- 1 -1
+
+
+import -window root "/home/guest/prtsc/$(date +%s).png" && notify-send -t 1 ok # && xdotool mousemove_relative 100 100
+#!/bin/sh
+cd /dev/shm/
+mkdir loop
+cd /dev/shm/loop
+rm *
+for i in $(seq 1 1 1000)
+do
+echo $i
+import -window root -geometry 160x128 $i.png #too little
+sleep 1.5s
+done
+#montage -geometry 160x128 * /home/disk/Folders/time/$(date +%s).png
+notify-send end#!/bin/sh
+cd /dev/shm/
+mkdir loop
+cd /dev/shm/loop
+rm *
+for i in $(seq 1 1 16)
+do
+echo $i
+import -window root -geometry 320x256 $i.png #too little
+sleep 2s
+done
+#notwork resolution
+montage -geometry 320x256 * /home/disk/Folders/time/$(date +%s).png #!/bin/sh
+while true
+do
+import -window root "/dev/shm/$(date +%s).png" 
+
+sleep 10s
+done
+#!/bin/sh
+cd /dev/shm/
+mkdir loop
+cd /dev/shm/loop
+rm *
+for i in $(seq 1 1 64)
+do
+echo $i
+import -window root -geometry 160x128 $i.png #too little
+sleep 10s
+done
+montage -geometry 160x128 * /home/disk/Folders/time/$(date +%s).png #!/bin/sh
+cd /dev/shm/
+mkdir loop
+cd /dev/shm/loop
+rm *
+for i in $(seq 1 1 64)
+do
+echo $i
+import -window root -geometry 160x128 $i.png #too little
+sleep 2s
+done
+montage -geometry 160x128 * /home/disk/Folders/time/$(date +%s).png #!/bin/sh
+import -window root -monochrome "/dev/shm/$(date +%M-%S).png"
+import -window root "/dev/shm/1.png" 
+mtpaint /dev/shm/1.png
+#!/bin/sh
+while true
+do
+import -window root -monochrome "/dev/shm/$(date +%M).png" #sec
+sleep 1m
+done
+#when press enter, copy images
+notify-send scripts-portquests
+todo scritpfor factorio open images
+mpv /home/art/live.m3u
+lynx --dump $1 | grep -C4 Age:
+netsurf-gtk roomimg.stream.highwebmedia.com/ri/$(echo $1 | sed -e  s/.*chaturbate.com//g -e s/\\///g).jpg &
+streamlink -O $1 720p,900p,810p,1080p,768p,576p,540p,512p,480p,460p,360p,320p | tee $(date +%s) | mpv -
+#streamlink -o $(date +%s) $1 720p,900p,810p,1080p,768p,576p,540p,512p,480p,460p,360p,320p
+#download rss from 9gag/gif
+
+cd /dev/shm/
+rm * #rem w/o folders
+curl "https://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2" > 1 #get rss file https://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2
+
+cat 1 \
+| tee 2 \
+| grep webm \
+| tee 3 \
+| perl -npe s/.*src\=\"//g \
+| tee 4 \
+| perl -npe s/webm.*/webm/g \
+| tee 5 \
+ > list #get url list
+
+cat 2 \
+| grep title \
+| perl -npe s/.*\<title\>//g \
+| perl -npe s/\<.*//g \
+| perl -npe "s/ /_/g" \
+| perl -npe "s/\:/_/g" \
+| perl -npe "s/\;/_/g" \
+| perl -npe "s/\#/_/g" \
+>list2 #egt title list
+
+cat list | perl -npe s/.*\\///g  \
+> list3 #get filename list
+
+paste list3 list2 > list4 # get filename title list
+rss_see2 &
+wget -q -nc -i list #download adds
+
+cat list4 | xargs -n2 rss2 #run rss2, if error add scripts_port to .bashrc
+rm 1 2 3 4 5 list list2 list3 list4
+rss_see
+
+#funktion for rss
+#ln -sr $1 links/$2
+mv $1 $2 # test it
+
+
+#watch all files at /dev/shm/ and if press c, than coppy to ~
+##if press c when plat scipt copy file
+##tested	
+cd /dev/shm/
+mpv * >> 1
+cat 1 | grep -E "Playing|binding" | grep -B1 binding | grep Playing | sed -e s/.*\ //g | tee 2 | xargs cp -t /home/disk/Folders/video/
+cat 2
+sleep 10s
+cd /dev/shm/
+mpv * >> 1
+cat 1 | grep -E "Playing|binding" | grep -B1 binding | grep Playing | sed -e s/.*\ //g | tee 2 | xargs cp -t /home/disk/Folders/video/
+cat 2
+#streamlink+log+secuund
+	echo get $1
+	echo $1 >> /mnt/sda7/dropbox/twitchlog
+	a=$(date +"%s")
+#	streamlink --player "mpv --no-audio" $1 720p,900p,810p,768p,576p,540p,512p,480p,460p,360p,320p,1080p,best 2>&1 | xargs -d '\n' -n1 notify-send -t 10000
+	streamlink --stream-sorting-excludes ">720p" --player "mpv --no-audio" $1 best 2>&1 | xargs -d '\n' -n1 notify-send -t 6000
+#grep |ns?
+#	streamlink --stream-sorting-excludes ">720" $r best 2>&1 | xargs -d '\n' -n1 notify-send -t 6000
+	b=$(date +"%s")
+
+	echo $(( $b - $a ))
+	echo $(( $b - $a )) >> /mnt/sda7/dropbox/twitchlog
+cat /mnt/sda2/files/say
+light "https://www.google.com/search?q=$*"while true
+do
+dosbox -exit $1
+done
+cat $1 | text2wave -o speech-$1-$(date +%s).wav -eval "(voice_msu_ru_nsh_clunits)"
+
+watchclip2 | while read r
+do
+echo $r 
+echo $r | festival --tts --language russian
+done
+while read var
+do
+	if [ -z "$var" ]
+	then
+		cat -n /dev/shm/stack
+	else
+		echo $var >> /dev/shm/stack
+	fi
+done
+#todo if -werwerwe delete werwerwer
+#todo if clear clear stack
+mkdir /dev/shm/.cache
+cp .bash_history /mnt/sda7/dropbox/history$(date +%s)
+touch /dev/shm/places.sqlite /dev/shm/places.sqlite-wal /dev/shm/session.rdf
+crontab crontab
+#touch 
+touch "$*"#touch 
+touch "$*"#echo $(date +%s)
+echo $(d)	
+xsel -o -b \
+| perl -npe s/\\./.\\n\\n/g \
+| perl -npe s/\\?/?\\n\\n/g \
+| tac
+#|perl -npe s/\\,/,\\n/g \
+mem &
+watchclip twitch | while read r
+do
+s $r
+done
+watchclip twitch | while read r
+#watchclip send to stack and cycle read from stck (when player close, read next vlue)
+do
+	notify-send get $r
+	echo get $r
+	echo $r >> /mnt/sda2/files/twitchlog
+	a=$(date +"%s")
+	livestreamer $r  720p,900p,810p,1080p,768p,576p,540p,480p,460p,360p,320p 2>&1 | xargs -d '\n' -n1 notify-send -t 6000
+	b=$(date +"%s")
+#
+	echo $(( $b - $a )) >> /mnt/sda2/files/twitchlog
+done
+watchclip twitch | while read r
+#watchclip send to stack and cycle read from stck (when player close, read next vlue)
+do
+	tw-cooldown &
+	notify-send get $r
+	echo get $r
+	echo $r >> /mnt/sda2/files/twitchlog
+	a=$(date +"%s")
+	streamlink $r  720p,900p,810p,1080p,768p,576p,540p,512p,480p,460p,360p,320p 2>&1 | xargs -d '\n' -n1 notify-send -t 6000
+	b=$(date +"%s")
+#
+	echo $(( $b - $a ))
+	echo $(( $b - $a )) >> /mnt/sda2/files/twitchlog
+done
+for i in $(seq 1 1 20)
+do
+xdotool key Caps_Lock
+
+sleep 1
+done
+crop https://www.twitch.tv/aiwezo 0 150 0 0
+crop https://www.twitch.tv/popawasia 0 194 0 0
+crop https://www.twitch.tv/opoi4 0 194 0 0
+crop https://www.twitch.tv/akastinger 0 190 0 0
+crop https://www.twitch.tv/falcone999 0 166 0 0
+crop https://www.twitch.tv/falcone999 26 228 0 51
+crop https://www.twitch.tv/helllight111 0 0 0 0
+crop https://www.twitch.tv/2bishop 0 0 0 0
+crop https://www.twitch.tv/f1mka123 0 0 0 0
+crop https://www.twitch.tv/dem0nar 0 0 0 0
+tw
+watchclip twitch | while read r
+#watchclip send to stack and cycle read from stck (when player close, read next vlue)
+do
+	mousepad $r
+	tw-cooldown &
+	notify-send get $r
+	echo get $r
+	echo $r >> /mnt/sda2/files/twitchlog
+	streamlink $r  360p,460p,480p,320p &
+done
+watchclip twitch | while read r
+#watchclip send to stack and cycle read from stck (when player close, read next vlue)
+do
+	mousepad $r
+	tw-cooldown &
+	notify-send get $r
+	echo get $r
+	echo $r >> /mnt/sda2/files/twitchlog
+	streamlink $r 1080p,900p,810p,768p,720p,576p,540p,512p,480p,460p,360p,320p &
+done
+for i in $(cat /home/disk/scripts-port/twitter_list)
+do
+echo $i
+light-firefox $i
+read r
+done
+for i in $(cat scripts-port/twitter_list)
+do
+lynx --dump --width=1000 $i | grep -B10 replies | grep -v -F -f scripts-port/ungrep | perl -pe "s/\[\d//g" | more & # todo grep -v -P "^\d+$" and ^More$ "3 replies 74 retweets 187 likes" #todo more or less
+#not in terminel byt > file; light file
+light $i
+read r
+done
+
+https://twitter.com/Vitauskas_A
+https://twitter.com/KeXXit1
+https://twitter.com/Durevestnik
+https://twitter.com/OVCIOM
+https://twitter.com/ChetkiyTASS
+
+https://twitter.com/USApoRusski
+https://www.xe.com/currencycharts/?from=USD&to=RUB
+
+https://twitter.com/LyapunovS
+https://twitter.com/SiberianMan
+https://twitter.com/ZavPolit
+
+
+https://twitter.com/vnf_m
+https://twitter.com/Ale4kko
+https://twitter.com/mix_voronezh
+
+https://twitter.com/oldLentach
+https://twitter.com/Mars_FM13
+https://twitter.com/raymond_saint
+
+https://twitter.com/4stih
+https://twitter.com/crimeapanda
+
+https://twitter.com/dw_russian
+https://twitter.com/Sandy_mustache
+
+https://twitter.com/Alfarius2012
+https://twitter.com/frostr1
+https://twitter.com/L_Stotch
+https://twitter.com/iMozziconi
+https://twitter.com/Buddy_Judge
+https://twitter.com/Lndcalling
+https://twitter.com/elder_george
+https://twitter.com/Ruslan_Baysaev
+https://twitter.com/bocheng
+
+https://twitter.com/_U_R_I_c
+https://twitter.com/spacelofdrock
+https://twitter.com/hu_lviv
+https://twitter.com/KarpenkoBatjar
+https://twitter.com/zz11111zz
+https://twitter.com/ShkvarkiUA
+https://twitter.com/Vitauskas_A
+https://twitter.com/KeXXit1
+https://pikabu.ru/top-comments
+https://twitter.com/Durevestnik
+https://twitter.com/OVCIOM
+https://twitter.com/ChetkiyTASS
+https://twitter.com/5AllanLeVito
+https://twitter.com/USApoRusski
+https://www.xe.com/currencycharts/?from=USD&to=RUB
+https://twitter.com/radist_titanika
+https://twitter.com/LyapunovS
+https://twitter.com/SiberianMan
+https://twitter.com/ZavPolit
+https://twitter.com/gun1man
+https://twitter.com/PrytSLU
+https://twitter.com/gorsha81
+https://twitter.com/vnf_m
+https://twitter.com/Ale4kko
+https://twitter.com/mix_voronezh
+
+https://twitter.com/A_G_2007
+https://twitter.com/___Beardman___
+https://twitter.com/nehovaysyatopol
+https://twitter.com/SergiusTaurus
+https://twitter.com/AskoldFrazer
+https://twitter.com/sergiivasylkiv4
+https://twitter.com/SlavaUkraine20
+https://twitter.com/oldLentach
+https://twitter.com/Mars_FM13
+
+https://twitter.com/PourqoisPas
+
+
+
+
+https://twitter.com/4stih
+https://twitter.com/crimeapanda
+
+https://twitter.com/PrytSLU
+
+https://twitter.com/search-home
+https://twitter.com/dw_russian
+https://twitter.com/Sandy_mustache
+https://twitter.com/a_scho_tam_u_pp
+https://twitter.com/step_artur87/following
+https://mobile.twitter.com/compose/tweet
+(BUTTON)
+Reply
+Retweeted
+Like
+Liked
+Undo
+mount #without args
+git add *;git add -u
+perl -MURI::Escape
+md5sum *
+
+#watch clipboard and echo grepped rows for other script
+##big scripts not works
+echo 0 | xsel -i -b
+while true
+do
+	a=$(xsel -o -b | grep $1)
+	sleep 0.2
+	if [ "$a" != "$b" ]
+	then 
+		echo -e "$a" >> /dev/shm/log
+		echo -e "$a"
+		b=$a
+	fi
+done
+
+#watch clipboard until grep first arg
+#
+#watch clipboard and echo grepped rows for other script
+##big scripts not works
+echo 0 | xsel -i -b
+while true
+do
+	a=$(xsel -o -b)
+	sleep 0.2
+	if [ "$a" != "$b" ]
+	then 
+		echo -e "$a" >> /dev/shm/log
+		echo -e "$a"
+		b=$a
+	fi
+done
+
+#watch clipboard until grep first arg
+#
+xsel -o -b
+notify-send -t 600000 "$(xsel -o -b)"
+
+#save clipboard
+d=$(date +%s)
+xsel -o -b >  /mnt/sda7/dropbox/$d.pgn
+#xboard $d.pgn
+#watchclip and open youtube with mpv in queue
+watchclip youtube | while read r
+#watchclip send to stack and cycle read from stck (when player close, read next vlue)
+do
+echo get $r
+cclive --exec 'vlc "%f" &'  $(xsel -o -b) # f & for paralel
+done
+
+#youtube-watchclip

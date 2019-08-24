@@ -1,0 +1,5 @@
+watchclip2 | while read r
+do
+echo $r 
+echo $r | festival --tts --language russian
+done

@@ -1,0 +1,4 @@
+cd /home/art/ete/
+mkdir -p bots$(date +%F) && \
+cd bots$(date +%F) && \
+lynx --dump http://bots.el-services.net/index.php | grep php | sed -e s/.*\\s//g | xargs -n1 lynx --dump >> 1

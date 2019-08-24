@@ -1,0 +1,4 @@
+player=mpv --no-audio
+stream-sorting-excludes=>720p
+#title="{title}{author}{category}"not work
+twitch-disable-hosting

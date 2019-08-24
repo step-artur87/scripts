@@ -1,0 +1,17 @@
+mkdir /mnt/sda2/backup/automusor /mnt/sda2/backup/Photo \
+/mnt/sda2/backup/Video /mnt/sda2/backup/My\ Music /mnt/sda2/backup/Ebook
+cd /mnt/sdb1/
+#copy empty to /mnt/sda2/backup/automusor/
+find . -maxdepth 1 -type d -empty -exec mv -f '{}' /mnt/sda2/backup/automusor/ \;
+mv /mnt/sdb1/Photos /mnt/sda2/backup/Photo/Photo$(date +%s)
+mv /mnt/sdb1/Video /mnt/sda2/backup/Video/Video$(date +%s)
+mv /mnt/sdb1/My\ Music /mnt/sda2/backup/My\ Music/My\ Music$(date +%s)
+
+
+#todocp bmk at Ebook recuures
+find . -name \*.BMK -exec cp -f {} /mnt/sda2/backup/Ebook \;
+
+#archive  all
+#co archives to dropbox
+#if empty folder at photo, mv all newer files to folder
+#git it

@@ -1,0 +1,1 @@
+lynx -nopause --display_charset UTF-8 -accept_all_cookies -use_mouse $*

@@ -1,0 +1,5 @@
+mem &
+watchclip twitch | while read r
+do
+s $r
+done

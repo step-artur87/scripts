@@ -1,0 +1,18 @@
+echo mouse net zapasy wstilka shtany shorty tb wuha rukavitsi
+echo if littlepinkald open li,  if not - netsurf
+echo video lauchch after closing gedit
+echo KOROBKA
+#netsurf-gtk https://chaturbate.com/20to30-cams/female/?page=2 &
+
+watchclip chaturbate | while read r
+do
+	echo get $r
+	mousepad $r
+	echo $r >> /mnt/sda2/files/chlog
+	a=$(date +"%s")
+	streamlink $r 240p,480p,576p,600p,720p --player "mpv  --no-audio --force-media-title $r" -Q
+	b=$(date +"%s")
+	echo $(( $b - $a ))
+	echo $(( $b - $a )) >> /mnt/sda2/files/chlog
+done
+

@@ -1,0 +1,2 @@
+cat $1 | text2wave -o speech-$1-$(date +%s).wav -eval "(voice_msu_ru_nsh_clunits)"
+

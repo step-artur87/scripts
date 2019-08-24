@@ -1,0 +1,1 @@
+eval $(xdotool getmouselocation --shell);echo xdotool mousemove $X $Y  click 1 | xsel -i -b

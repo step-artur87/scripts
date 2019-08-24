@@ -1,0 +1,30 @@
+echo open items not tested
+echo attention see /home/disk/factorio_blueprints
+/home/disk/factorio_planner
+disable_audio
+d=$(date +%s)
+#cp new
+cp /home/disk/factorio_planner/main.bmp /home/disk/factorio_planner/main$d
+mtpaint /home/disk/factorio_planner/main$d &
+cp /home/disk/factorio_planner/items /home/disk/factorio_planner/items$d
+mtpaint /home/disk/factorio_planner/items$d &
+/./home/nobackup/factorio/factorio/bin/i386/factorio &
+echo "/c game.speed=0.5; /c game.forces["enemy"].kill_all_units(); /c game.forces["enemy"].evolution_factor=0;/c game.map_settings.enemy_expansion.enabled = false" | xsel -i -b
+echo needed copied
+echo "/c game.speed=0.5"
+echo "game.player.force.character_build_distance_bonus = 10000"
+echo "game.player.force.character_reach_distance_bonus = 10000"
+echo "/c game.forces["enemy"].evolution_factor=0"
+echo "/c game.forces["enemy"].kill_all_units()"
+echo "/c game.map_settings.enemy_expansion.enabled = false"
+
+echo "/c game.player.surface.always_day=true"
+echo "/c game.player.cheat_mode=true"
+echo "/c game.player.force.research_all_technologies()"
+echo "/c game.player.surface.peaceful_mode  = true"
+
+#eog /home/disk/factorio_planner/main.bmp
+
+
+#netsurf https://wiki.factorio.com/Console#World_manipulation_scripts
+

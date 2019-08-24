@@ -1,0 +1,10 @@
+youtube-dl --help
+youtube-dl --flat-playlist https://www.youtube.com/channel/UCZFipeZtQM5CKUjx6grh54g/playlists
+youtube-dl --flat-playlist https://www.youtube.com/playlist?list=PLIIOUpOge0LskSp9Jac9nE6xSDfZ83Tgf
+youtube-dl --list-subs https://www.youtube.com/watch?v=H2f0Wd3zNj0&list=PLIIOUpOge0LskSp9Jac9nE6xSDfZ83Tgf&t=0s&index=2
+youtube-dl --list-subs https://www.youtube.com/watch?list=PLIIOUpOge0LskSp9Jac9nE6xSDfZ83Tgf&t=0s&index=2
+youtube-dl --list-subs https://www.youtube.com/playlist?list=PLIIOUpOge0LulClL2dHXh8TTOnCgRkLdU
+youtube-dl --help
+youtube-dl -i --list-subs https://www.youtube.com/playlist?list=PLIIOUpOge0LulClL2dHXh8TTOnCgRkLdU
+bc
+bc

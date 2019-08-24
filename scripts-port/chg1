@@ -1,0 +1,2 @@
+#run script press for window with image and sccript run streamlink
+xprop | grep -i _NET_WM_NAME | grep -i utf |grep jpg | sed -e s/.jpg.*//g -e s/.*\"/chaturbate\.com\\//g | xargs -I num streamlink num 720p

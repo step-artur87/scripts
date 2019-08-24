@@ -1,0 +1,1 @@
+notify-send "$(ly --dump pikabu.ru/top-comments | grep -v -e "[a-zA-Z0-9]" | grep -B1000 Регистрация | shuf -n 5)"

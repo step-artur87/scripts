@@ -1,0 +1,13 @@
+#!/bin/sh
+cd /dev/shm/
+mkdir loop
+cd /dev/shm/loop
+rm *
+for i in $(seq 1 1 16)
+do
+echo $i
+import -window root -geometry 320x256 $i.png #too little
+sleep 2s
+done
+#notwork resolution
+montage -geometry 320x256 * /home/disk/Folders/time/$(date +%s).png 

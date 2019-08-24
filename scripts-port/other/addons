@@ -1,0 +1,6 @@
+#light-firefox "https://addons.mozilla.org/en-US/firefox/search/?platform=linux&q=$*"
+#exit 0
+wget https://addons.mozilla.org/firefox/downloads/file/419655/image_block-3.0-signed-fx.xpi
+#wget https://addons.mozilla.org/firefox/downloads/file/685614/ublock_origin-1.13.8-an+fx+sm+tb.xpi
+#wget https://addons.mozilla.org/firefox/downloads/file/661437/thumbnail_zoom_plus-4.2-fx+sm.xpi
+#wget https://addons.mozilla.org/firefox/downloads/file/1059170/tab_mix_plus-0.5.5.0-fx.xpi

@@ -1,0 +1,4 @@
+notify-send 1
+xdotool mousemove_relative -- 1 -1
+
+

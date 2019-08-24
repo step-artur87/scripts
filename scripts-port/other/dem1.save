@@ -1,0 +1,9 @@
+cat /dev/shm/1.html  | grep -a target | perl -npe s/\"/\\n/g | grep pic > /dev/shm/2
+red r
+
+for i in $(cat /dev/shm/2)
+do
+light-firefox $i
+echo $i >> 3
+read r
+done

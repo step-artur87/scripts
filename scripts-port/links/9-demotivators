@@ -1,0 +1,10 @@
+gedit /mnt/sda2/scripts/scripts-port/dem_list &
+gedit /mnt/sda2/scripts/scripts-port/dem_log &
+read r -p press return
+
+for i in $(cat /mnt/sda2/scripts/scripts-port/dem_list)
+do
+light-firefox  $i
+echo $i >> /mnt/sda2/scripts/scripts-port/dem_log
+read r
+done

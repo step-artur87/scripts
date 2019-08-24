@@ -1,0 +1,9 @@
+echo WAIT
+history | grep \#\#zom
+cd /home/disk/zom/
+cp -r userdata userdata$(d)
+wine game.exe &
+ffmpeg -f x11grab -s 800x600 -r 2  \
+-i :0.0+0,0 /dev/shm/$(date +%s).avi
+
+

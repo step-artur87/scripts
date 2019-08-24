@@ -1,0 +1,16 @@
+echo wait:load game,  return-password, load 3d
+#history | grep \#\#ete
+cd ~/eternallands/
+echo if not game edit scr
+./eternallands.sh &
+sleep 20
+netsurf-gtk bots.el-services.net &
+netsurf-gtk www.el-wiki.net &
+exit
+cd /mnt/sda2/ete/
+mkdir -p $(date +%f)
+cp -n p.png $(date +%f)
+cp -n a.png $(date +%f)
+cp -n h.png $(date +%f)
+cd $(date +%f)
+mtpaint *

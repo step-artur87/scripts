@@ -1,0 +1,13 @@
+#help for eternal lands 
+cat /home/art/ete/list | grep -i $1 
+for i in $(cat /home/art/ete/list | grep -i $1 )
+do
+	echo $i
+	read r
+	echo $r
+	if [ $r ]
+	then
+		netsurf-gtk  https://www.el-wiki.net/$i &
+	fi	
+done
+

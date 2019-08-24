@@ -1,0 +1,11 @@
+lynx --width=1000 --dump --list_inline m.pikabu.ru | grep -A 10000 "Полная версия Пикабу"> /dev/shm/pik
+cat /dev/shm/pik | grep -v https &
+gedit /dev/shm/pik &
+light m.pikabu.ru &
+
+watchclip pikabu | while read r
+do
+echo "$r"
+light "$r"
+done
+

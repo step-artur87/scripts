@@ -1,0 +1,6 @@
+#cat /home/art/.elc/main/chat_log_201903.txt \
+#| grep --color -e "exp for Harvest" -e "Log started at" -e aleph87 \
+#| grep -B10 "exp for Harvest" \
+#| tail
+cat /home/art/.elc/main/chat_log_201903.txt \
+| grep --color -e "exp for Harvest" -e "Log started at"

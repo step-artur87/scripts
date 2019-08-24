@@ -1,0 +1,2 @@
+cd /dev/shm/
+wget -r -nd -nc -l1  -A "*.jpg" --random-wait -w5 --accept-regex "http://demotivation.me/images/......../............\.jpg" -i /dev/shm/2

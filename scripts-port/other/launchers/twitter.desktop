@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=open twitter from list by return (twitter)
+Comment=launcher
+Exec=/mnt/sda2/scripts/scripts-port/twitter
+Icon=
+Path=
+Terminal=true
+StartupNotify=true

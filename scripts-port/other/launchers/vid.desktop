@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=watch in mpv fiiles from clb (vid)
+Comment=launcher
+Exec=/mnt/sda2/scripts/scripts-port/vid
+Icon=
+Path=
+Terminal=true
+StartupNotify=true

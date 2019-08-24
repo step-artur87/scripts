@@ -1,0 +1,5 @@
+#upload files from folder dropbox
+#set -x
+####dropbox archive
+/./home/art/dropbox/Dropbox-Uploader/dropbox_uploader.sh upload /home/art/dropbox/2dropbox/* / \
+&& mv -f /home/art/dropbox/2dropbox/* /home/art/dropbox/dropboxed

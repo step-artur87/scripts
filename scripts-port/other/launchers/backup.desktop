@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=bachup tel and hdd (backup)
+Comment=launcher
+Exec=/mnt/sda2/scripts/scripts-port/backup
+Icon=
+Path=
+Terminal=true
+StartupNotify=true

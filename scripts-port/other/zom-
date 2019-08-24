@@ -1,0 +1,4 @@
+echo WAIT
+history | grep \#\#zom
+cd /home/disk/zom/
+wine game.exe &

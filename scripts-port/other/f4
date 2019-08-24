@@ -1,0 +1,2 @@
+cd /mnt/sda2/nes/
+fceux "$(ls -1 |grep -i $1 | grep -v sav| head -n1)"

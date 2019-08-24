@@ -1,0 +1,13 @@
+#TODO LST CREENHOOT
+cd /home/guest/.openttd/screenshot/
+new=$(ls -t1 | head -1)
+echo $new 
+convert  $new -scale 25% q.png
+./skew  -a 26.5 -m degrees -d r2b q.png w.png
+./skew  -a 45 -m degrees -d b2l w.png _$new.png
+
+#convert  e.png -scale   400%  r.png
+#convert  r.png -crop 1500x1000-700+0  t.png
+#TODO CROP todo change color litegreen to 1 darkgreen to 2
+
+mtpaint _$new

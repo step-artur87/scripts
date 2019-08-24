@@ -1,0 +1,11 @@
+while true
+do
+	fceux /mnt/sda2/nes/MarioBros.nes &
+	sleep 5
+	xdotool key F7
+	sleep 80s
+	xdotool key F5
+	sleep 5
+	killall fceux
+	read r
+done

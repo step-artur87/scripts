@@ -1,0 +1,26 @@
+[1mdiff --git a/scripts-port/pal b/scripts-port/pal[m
+[1mindex 14ed196..c307001 100755[m
+[1m--- a/scripts-port/pal[m
+[1m+++ b/scripts-port/pal[m
+[36m@@ -1,5 +1,21 @@[m
+[31m[-cat -][m[32m{+/.+}[m/mnt/sda2/[31m[-scripts/scripts--][mp[32m{+alem+}[mo[31m[-rt-][m[32m{+on+}[m/[32m{+pa+}[ml[31m[-i-][m[32m{+emoo+}[mn[31m[-ks |-][m [32m{+&+}[m
+while [32m{+t+}[mr[32m{+u+}[me[31m[-ad r-][m
+do[m
+[32m{+	r=$(top -n 1 -b | grep Mem |grep Swap | cut -c 60-62)+}[m
+[32m{+	+}[mecho $r
+[32m{+	#notify-send $+}[mr
+[32m{+if t+}[me[31m[-a-][m[32m{+st $r -lt 150+}[m
+[32m{+then+}[m
+[32m{+	notify-sen+}[md $[32m{+r+}[m
+[32m{+f+}[mi
+[32m{+if test $r -lt 75+}[m
+[32m{+	then+}[m
+[32m{+	echo away+}[m
+[32m{+		killall palemoon+}[m
+[32m{+		killall palemoon+}[m
+[32m{+		killall palemoon+}[m
+[32m{+		killall palemoon+}[m
+[32m{+		/./mnt/sda2/palemoon/palemoon &+}[m
+[32m{+	fi+}[m
+[32m{+	sleep 10+}[m
+done

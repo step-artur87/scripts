@@ -1,0 +1,15 @@
+mkdir /mnt/sda7/dropbox/gl
+cd /mnt/sda7/dropbox/gl
+mkdir gorky-look.livejournal.com
+lynx --dump --display_charset UTF-8 https://gorky-look.livejournal.com/2019/07/ |grep html |grep gorky-look | sed s/.*gorky-look/gorky-look/g >all
+for r in $(cat all)
+do
+	echo $r
+	if [ ! -s $r ] 
+	then
+		echo d $r
+		lynx --dump -width=1000 --display_charset UTF-8 https://$r | grep -B1000 -F "Tags: " | grep -A1000 -F "Share"  > $r
+		mousepad $r &
+		sleep 1
+	fi
+done

@@ -1,0 +1,4 @@
+while true
+do
+dosbox -exit $1
+done

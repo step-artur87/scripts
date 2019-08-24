@@ -1,0 +1,18 @@
+#backup all
+cd /media/art/79E8-2673/ || echo Not Flash
+cd /media/art/79E8-2673/ || exit
+rm -r /home/art/.local/share/TelegramDesktop/
+
+mkdir -p /media/art/79E8-2673/backup_flash_deb/home/
+cp -ruv /home/art /media/art/79E8-2673/backup_flash_deb/home/
+cp -ruv /home/disk /media/art/79E8-2673/backup_flash_deb/home/
+
+#no -L, --dereference            always follow symbolic links in SOURCE
+#system not support symlink
+#  -p                           same as --preserve=mode,ownership,timestamps
+#  -R, -r, --recursive          copy directories recursively
+#  -u, --update                 copy only when the SOURCE file is newer
+#  -v, --verbose                explain what is being done
+#u copy time > change time
+#no p copy-time -> dest-time
+#p from-time -> dest-time

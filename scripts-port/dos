@@ -1,0 +1,7 @@
+#doslock &
+thunar /mnt/sda2/dos/
+watchclip dos | while read r
+do
+notify-send $(xsel -o -b)
+dosbox -exit $(xsel -o -b)
+done

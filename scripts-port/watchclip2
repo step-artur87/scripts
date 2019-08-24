@@ -1,0 +1,17 @@
+#watch clipboard and echo grepped rows for other script
+##big scripts not works
+echo 0 | xsel -i -b
+while true
+do
+	a=$(xsel -o -b)
+	sleep 0.2
+	if [ "$a" != "$b" ]
+	then 
+		echo -e "$a" >> /dev/shm/log
+		echo -e "$a"
+		b=$a
+	fi
+done
+
+#watch clipboard until grep first arg
+#

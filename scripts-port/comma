@@ -1,0 +1,2 @@
+sleep 1
+xdotool  search --name DOSBOX search --name

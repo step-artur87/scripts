@@ -1,0 +1,6 @@
+for i in $(cat /home/disk/scripts-port/twitter_list)
+do
+echo $i
+light-firefox $i
+read r
+done

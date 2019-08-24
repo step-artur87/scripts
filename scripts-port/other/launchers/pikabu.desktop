@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=bet commeent frompikbu pot in clb (pikabu)
+Comment=launcher
+Exec=/mnt/sda2/scripts/scripts-port/pikabu
+Icon=
+Path=
+Terminal=true
+StartupNotify=true

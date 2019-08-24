@@ -1,0 +1,2 @@
+cd /mnt/sda2/files/
+youtube-dl  --playlist-start=$1 -x https://www.youtube.com/playlist?list=PLOWNkHTFkkpOvpZXWBVYEEYii8nT8eJc6 

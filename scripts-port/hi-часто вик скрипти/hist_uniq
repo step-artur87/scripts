@@ -1,0 +1,12 @@
+cat ba* \
+| tee 1 \
+| grep -v ^\# \
+| tee 2 \
+| sed -e s/\ /\\n/g  \
+| tee 3 \
+| sort \
+| tee 4 \
+| uniq -c \
+| tee 5 \
+| grep -P "   \d\d" \
+> 6

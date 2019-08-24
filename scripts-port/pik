@@ -1,0 +1,14 @@
+#lynx -nopause --display_charset UTF-8 -accept_all_cookies -use_mouse --list_inline --dump pikabu.ru \
+#> /dev/shm/pik
+#gedit /dev/shm/pik &
+netsurf-gtk  pikabu.ru &
+././mnt/sda1/porteus/optional/opera-45.0.2552.898-i586-1/usr/lib/i386-linux-gnu/opera/opera pikabu.ru &
+watchclip pikabu | while read r
+do
+echo "$r"
+light-firefox "$r"
+done
+
+
+## no inline waatchclip number and grep link not can becaause --list-inline can not open file
+##todo no site to stdout

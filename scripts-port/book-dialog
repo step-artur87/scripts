@@ -1,0 +1,3 @@
+cat "$*" | grep -C2 -P "(^\\—)|(\\:$)" > book.txt
+gedit book.txt
+

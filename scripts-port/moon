@@ -1,0 +1,4 @@
+date +%d
+echo  Moonrise Moonset Moonrise Time Distance Illumination
+lynx --nolist --dump https://www.timeanddate.com/moon/@813237 | grep -A60 "Moonrise Moonset Moonrise Time Distance" | grep -B60 "All times are local time for Vinnitsa"  | grep -v at | grep --color -P "\d\d\:\d\d"
+

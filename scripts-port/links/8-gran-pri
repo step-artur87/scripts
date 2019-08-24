@@ -1,0 +1,31 @@
+set -x
+dosbox  /home/disk/dos/Pgp/PGP.EXE &
+exit
+sleep 15	
+xdotool key Caps_Lock
+sleep 1
+xdotool  search --name DOSBox* key Escape
+sleep 0.25
+xdotool  search --name DOSBox* key Up
+sleep  0.25
+xdotool  search --name DOSBox* key Down
+sleep  0.25
+xdotool  search --name DOSBox* key Right
+sleep  0.25
+xdotool  search --name DOSBox* key Down
+sleep  0.25
+xdotool  search --name DOSBox* key Return
+sleep  0.25
+xdotool  search --name DOSBox* key Return
+sleep  0.25
+xdotool  search --name DOSBox* key Right
+sleep  0.25
+xdotool  search --name DOSBox* key Right
+sleep  0.25
+xdotool  search --name DOSBox* key Right
+#sleep  0.25
+#xdotool  search --name DOSBox* key Return
+#xdotool key Caps_Lock
+sleep 5
+wmctrl -R DOS
+

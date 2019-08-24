@@ -1,0 +1,3 @@
+echo croptop,cropright,cropdown,cropleft
+streamlink --player="vlc --video-filter=croppadd{croptop=$2,cropright=$3,cropdown=$4,cropleft=$5}" $1 720p,900p,810p,1080p,768p,576p,540p,512p,480p,460p,360p,320p
+

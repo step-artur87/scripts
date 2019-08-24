@@ -1,0 +1,20 @@
+echo mouse net zapasy wstilka shtany shorty tb wuha 
+
+#netsurf-gtk https://chaturbate.com/20to30-cams/female/?page=2 &
+
+watchclip chaturbate | while read r
+do
+	notify-send get $r
+	streamlink $r 240p,480p,576p,600p,720p --player "mpv -fs --no-audio"
+done
+
+	notify-send get $r
+	echo get $r
+	echo $r >> /mnt/sda2/files/twitchlog
+	a=$(date +"%s")
+	livestreamer $r  720p,900p,810p,1080p,768p,576p,540p,512p,480p,460p,360p,320p 2>&1 | xargs -d '\n' -n1 notify-send -t 6000
+	b=$(date +"%s")
+#
+	echo $(( $b - $a ))
+	echo $(( $b - $a )) >> /mnt/sda2/files/twitchlog
+done

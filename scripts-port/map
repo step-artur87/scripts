@@ -1,0 +1,9 @@
+#TODO LST CREENHOOT
+cd ~/.openttd/screenshot/
+new=$(ls -t1 | head -1)
+echo $new
+mv "$new" 1.png
+./skew  -a 26.5 -m degrees -d r2b 1.png 2.png
+./skew  -a 45 -m degrees -d b2l 2.png 3.png
+convert 3.png -scale 25% "_$new"
+mtpaint "_$new"

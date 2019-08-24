@@ -1,0 +1,11 @@
+while read var
+do
+	if [ -z "$var" ]
+	then
+		cat -n /dev/shm/stack
+	else
+		echo $var >> /dev/shm/stack
+	fi
+done
+#todo if -werwerwe delete werwerwer
+#todo if clear clear stack

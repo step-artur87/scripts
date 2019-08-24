@@ -1,0 +1,12 @@
+#streamlink+log+secuund
+	echo get $1
+	echo $1 >> /mnt/sda7/dropbox/twitchlog
+	a=$(date +"%s")
+#	streamlink --player "mpv --no-audio" $1 720p,900p,810p,768p,576p,540p,512p,480p,460p,360p,320p,1080p,best 2>&1 | xargs -d '\n' -n1 notify-send -t 10000
+	streamlink --stream-sorting-excludes ">720p" --player "mpv --no-audio" $1 best 2>&1 | xargs -d '\n' -n1 notify-send -t 6000
+#grep |ns?
+#	streamlink --stream-sorting-excludes ">720" $r best 2>&1 | xargs -d '\n' -n1 notify-send -t 6000
+	b=$(date +"%s")
+
+	echo $(( $b - $a ))
+	echo $(( $b - $a )) >> /mnt/sda7/dropbox/twitchlog

@@ -1,0 +1,5 @@
+xsel -o -b \
+| perl -npe s/\\./.\\n\\n/g \
+| perl -npe s/\\?/?\\n\\n/g \
+| tac
+#|perl -npe s/\\,/,\\n/g \

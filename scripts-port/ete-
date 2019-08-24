@@ -1,0 +1,4 @@
+history | grep \#\#ete
+cd ~/eternallands/
+echo if not game edit scr
+./eternallands.sh &

@@ -1,0 +1,4 @@
+mkdir /dev/shm/.cache
+cp .bash_history /mnt/sda7/dropbox/history$(date +%s)
+touch /dev/shm/places.sqlite /dev/shm/places.sqlite-wal /dev/shm/session.rdf
+crontab crontab

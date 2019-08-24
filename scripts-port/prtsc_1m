@@ -1,0 +1,7 @@
+#!/bin/sh
+while true
+do
+import -window root "/dev/shm/$(date +%s).png" 
+
+sleep 10s
+done

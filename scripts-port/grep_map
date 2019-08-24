@@ -1,0 +1,1 @@
+xsel -o -b | grep -B1000 Buying| grep -F -f /home/art/scripts-port/listmap | grep -v -P "4..\..."

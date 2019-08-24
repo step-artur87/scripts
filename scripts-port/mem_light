@@ -1,0 +1,23 @@
+while true
+do
+	r=$(top -n 1 -b | grep Mem |grep Swap | cut -c 60-62)
+	echo $r
+	if test $r -lt 70
+	then
+		notify-send $r
+	fi
+	if test $r -lt 55
+		then
+		killall light-firefox
+		killall mpv
+#		rm -rf .cache/
+	fi
+
+	r1=$(top -n 1 -b | grep -e light -e mpv | wc -l) #exit script if no light-firefox no mpv
+	if test $r1 -lt 1
+	then
+	echo no light-firefox, mpv, exit
+		exit 0
+	fi
+	sleep 10
+done

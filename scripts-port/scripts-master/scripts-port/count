@@ -1,0 +1,7 @@
+echo count 5 tries
+for i in {5..1}
+do
+read $r
+echo $i
+done
+echo go away this shit

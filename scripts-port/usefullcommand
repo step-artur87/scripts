@@ -1,0 +1,5 @@
+mount #without args
+git add *;git add -u
+perl -MURI::Escape
+md5sum *
+

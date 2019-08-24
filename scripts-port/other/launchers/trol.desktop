@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=anti trollng text from clb (trol)
+Comment=launcher
+Exec=/mnt/sda2/scripts/scripts-port/trol
+Icon=
+Path=
+Terminal=true
+StartupNotify=true

@@ -1,0 +1,6 @@
+watchclip roomimg | while read r
+do
+	s=$(echo $r | sed -e s/.*\\/ri\\///g -e s/.jpg.*//g)
+	echo $s
+	s https://chaturbate.com/$s
+done

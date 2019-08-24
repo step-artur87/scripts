@@ -1,0 +1,1 @@
+lynx --nolist --dump https://m.1xnag.world/line/eSports/ | grep -A1000 Filter\ markets | grep -B1000 About\ us | grep -A4 eSports | grep --color -A4 -e eSports.*

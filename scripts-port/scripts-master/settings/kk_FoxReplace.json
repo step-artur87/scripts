@@ -1,0 +1,55 @@
+{
+  "version": "0.15",
+  "groups": [
+    {
+      "name": "kk",
+      "urls": [],
+      "substitutions": [
+        {
+          "input": "000000000",
+          "inputType": "text",
+          "output": "kkk",
+          "caseSensitive": false
+        },
+        {
+          "input": "00000000",
+          "inputType": "text",
+          "output": "00kk",
+          "caseSensitive": false
+        },
+        {
+          "input": "0000000",
+          "inputType": "text",
+          "output": "0kk",
+          "caseSensitive": false
+        },
+        {
+          "input": "000000",
+          "inputType": "text",
+          "output": "kk",
+          "caseSensitive": false
+        },
+        {
+          "input": "00000",
+          "inputType": "text",
+          "output": "00k",
+          "caseSensitive": false
+        },
+        {
+          "input": "0000",
+          "inputType": "text",
+          "output": "0k",
+          "caseSensitive": false
+        },
+        {
+          "input": "000",
+          "inputType": "text",
+          "output": "k",
+          "caseSensitive": false
+        }
+      ],
+      "html": "none",
+      "enabled": true
+    }
+  ]
+}

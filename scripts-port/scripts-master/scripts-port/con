@@ -1,0 +1,11 @@
+xdotool mousemove 1116 20
+sleep 1
+xdotool click 1
+sleep 1
+xdotool mousemove 746 250 click 1
+sleep 1
+xdotool type --delay 100 e n l i g h t m e n t
+sleep 1
+xdotool key Return
+
+

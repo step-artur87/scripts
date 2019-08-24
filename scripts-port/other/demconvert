@@ -1,0 +1,1 @@
+cat $1 | grep -a target | perl -npe s/\"/\\n/g | grep pic > $2

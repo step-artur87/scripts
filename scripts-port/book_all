@@ -1,0 +1,6 @@
+#!/bin/sh
+cd ~/ete 
+xsel -o -b | grep -B1000 Buying | sed "s/[0-9].*//g" | sort -u |	grep -P . | grep -ivF -f book_no_need | grep -ivF -f book_learned > book_list
+xsel -o -b | grep -B1000 Buying |					grep -P . | grep -viF -f book_no_need | grep -ivF -f book_learned > books_info
+date >> book_list
+gedit book_list books_info

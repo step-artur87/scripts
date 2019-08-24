@@ -1,0 +1,16 @@
+echo $0 $! $? $$ $# $_
+#    $1, $2, $3, ... are the positional parameters.					#ok				#no, see
+#    "$@" is an array-like construct of all positional parameters, {$1, $2, $3 ...}.	#args asmany words		#no, see
+#    "$*" is the IFS expansion of all positional parameters, $1 $2 $3 ....		#args asone word		#no, see
+#    $# is the number of positional parameters.						#script.sh 1 2 3 4 ret 4	#no, count
+#?    $- current options set for the shell.						#man set			#?
+#    $$ pid of the current shell (not subshell). 					#test top -b | grep bash	#only killall
+#    $_ most recent parameter 								#last used arg			#no, see
+#    $? is the most recent foreground pipeline exit status.				#0=ok, 1-127=error		#yes
+#   $! is the PID of the most recent background command.				#nafig				#no
+#    $0 is the name of the shell or shell script.					#bash or path to script		#no
+
+#good exit status when error ()and red :)
+#https://www.reddit.com/r/linux/comments/2uf5uu/this_is_my_bash_prompt_which_is_your_favorite/
+
+#number $# $ cat file file file

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=test integrity of somefolders (test13)
+Comment=launcher
+Exec=/mnt/sda2/scripts/scripts-port/test13
+Icon=
+Path=
+Terminal=true
+StartupNotify=true
