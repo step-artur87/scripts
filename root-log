@@ -1,0 +1,23 @@
+#su,  save num term,  if next term one more - not script
+#if first term - 1 if secnd - 2
+t=$(tty | sed -e s/.*\\///g)
+#echo $t
+#save it first 1 second 2
+mkdir /dev/shm/$t
+#decrement if forst term 0 for second 1
+let t--
+#echo $t
+#if file not exist, so this is first su term,  script
+if [ ! -e /dev/shm/$t ]
+then
+#echo 1111
+#todo check t
+script -f /mnt/sda3/scripts/log/$t-$(date +%s)
+else
+##is second
+rm -r /dev/shm/$t
+let t++
+rm -r /dev/shm/$t
+fi
+#del
+#todo clear files
