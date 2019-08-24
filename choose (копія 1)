@@ -1,0 +1,48 @@
+echo "Choose thing"
+echo "1)pik"
+echo "2)twitter"
+echo "3)rss"
+echo "4)twitch"
+echo "5)gorkiy_look"
+echo "6)chess/draughts"
+echo "7)openttd"
+echo "8)granpri"
+echo "9)antrun"
+read n
+
+case $n in
+     1)
+	pik
+        ;;
+     2)
+        twitter
+        ;;
+     3)
+        rss
+        ;;
+     4)
+        rss
+        ;; 
+     5)
+        rss
+        ;; 
+     6)
+        rss
+        ;; 
+     7)
+        rss
+        ;; 
+     8)
+        rss
+        ;; 
+     9)
+        rss
+        ;; 
+     10)
+        rss
+        ;; 
+
+     *)
+        echo "Nothing aproprate"
+        ;;
+esac

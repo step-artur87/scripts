@@ -1,0 +1,6 @@
+cd /home/disk/scripts-port/links
+ls -1
+read r
+./"$(ls -1 | sed s/\*//g | grep $r)"
+
+

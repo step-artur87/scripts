@@ -1,0 +1,7 @@
+#run script press for window with image and sccript run streamlink
+echo chb, press enter, choose picture
+while true
+do
+xprop | grep -i _NET_WM_NAME | grep -i utf |grep jpg | sed -e s/.jpg.*//g -e s/.*\"/chaturbate\.com\\//g | xsel -i -b
+read r
+done
