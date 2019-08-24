@@ -1,3 +1,5 @@
+#sccript for rss
+#same like rss,  but wait 10 sec
 sleep 10s
 cd /dev/shm/
 mpv * >> 1
