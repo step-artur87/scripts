@@ -1,3 +1,0 @@
-https://www.old-games.ru/game/3590.html
-https://www.old-games.ru/game/download/3590.html
-lynx --dump https://www.old-games.ru/game/download/3590.html | grep download | grep get

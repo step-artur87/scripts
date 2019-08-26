@@ -1,5 +1,0 @@
-#!/bin/bash
-e() {
-  echo date
-}
-e

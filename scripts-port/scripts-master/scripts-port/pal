@@ -1,5 +1,0 @@
->/dev/shm/webappsstore.sqlite
->/dev/shm/session.rdf
->/dev/shm/places.sqlite
-mkdir /dev/shm/moonchild\ productions
-brightness.sh 4

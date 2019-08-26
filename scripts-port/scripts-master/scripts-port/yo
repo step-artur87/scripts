@@ -1,4 +1,0 @@
-while true
-do
-mpv --fullscreen --audio no --ytdl-format 18 $(xsel -o -b)
-done

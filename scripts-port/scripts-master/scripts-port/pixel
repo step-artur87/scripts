@@ -1,3 +1,0 @@
-notify-send 1
-#!/usr/bin/xdotool
-mousemove_relative -- 1 -1

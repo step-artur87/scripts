@@ -1,9 +1,0 @@
-git diff --color $1 $2>1;cat 1
-echo -e \\n\\n\\n\\n
-git diff --word-diff --color $1 $2>1;cat 1
-echo -e \\n\\n\\n\\n
-git diff --word-diff=porcelain --color $1 $2>1;cat 1
-echo -e \\n\\n\\n\\n
-git diff --word-diff-regex=. --color $1 $2>1;cat 1
-echo -e \\n\\n\\n\\n
-git diff --word-diff=porcelain --word-diff-regex=. --color $1 $2>1;cat 1

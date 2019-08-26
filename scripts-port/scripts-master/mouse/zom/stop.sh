@@ -1,1 +1,0 @@
-kill -TSTP $(pidof game.exe)

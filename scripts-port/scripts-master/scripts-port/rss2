@@ -1,2 +1,0 @@
-#ln -sr $1 links/$2
-mv $1 $2 # test it
