@@ -1,8 +1,8 @@
-light-firefox https://m.pikabu.ru/top-comments
-watchclip pikabu | while read r
+killall light
+lynx --dump --listonly pikabu.ru/top-comments | grep story | sed -e s/?.*//g |sed -e s/.*https/https/g |  sort -u > 1
+for i in $(cat 1)
 do
-	echo get $r
-	light-firefox "$(echo $r | sed -e s/\?.*//g)"
+echo $i
+read r
+opera $i
 done
-
-#| perl -npe s/pikabu/m.pikabu/g 
