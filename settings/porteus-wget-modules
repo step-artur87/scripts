@@ -1,15 +1,21 @@
+#porteus
+http://ftp.vim.org/ftp/os/Linux/distr/porteus/i586/current/Porteus-XFCE-v4.0-i586.iso
+
 https://packages.slackonly.com/pub/packages/current-x86/accessibility/xdotool/xdotool-3.20160805.1-i586-1_slonly.txz
 https://packages.slackonly.com/pub/packages/current-x86/desktop/wmctrl/wmctrl-1.07-i586-3_slonly.txz
 https://packages.slackonly.com/pub/packages/current-x86/accessibility/xsel/xsel-1.2.0-i586-1_slonly.txz
 https://packages.slackonly.com/pub/packages/14.2-x86/development/smartgit/smartgit-7.0.3-noarch-1_slonly.txz
-#java jre-8u181-i586-1.xzm downloaded
 https://packages.slackonly.com/pub/packages/current-x86/development/jdk/jdk-8u131-i586-1_slonly.txz
+#java jre-8u181-i586-1.xzm downloaded
 https://packages.slackonly.com/pub/packages/current-x86/system/dosbox/dosbox-0.74-i586-3_slonly.txz
-https://binaries.openttd.org/releases/1.8.0/openttd-1.8.0-linux-generic-i686.tar.gz
-https://proxy.binaries.openttd.org/openttd-releases/1.9.2/openttd-1.9.2-linux-debian-stretch-i386.deb
 https://github.com/teeworlds/teeworlds/releases/download/0.7.3.1/teeworlds-0.7.3.1-linux_x86.tar.gz
 https://packages.slackonly.com/pub/packages/14.2-x86/games/fceux/fceux-2.2.3-i586-1_slonly.txz
 http://slackware.cs.utah.edu/pub/slackware/slackware-current/slackware/d/git-2.23.0-i586-1.txz
+
+#openttd
+https://binaries.openttd.org/releases/1.8.0/openttd-1.8.0-linux-generic-i686.tar.gz
+https://debian.pkgs.org/9/debian-main-i386/libicu57_57.1-6+deb9u2_i386.deb.html
+https://proxy.binaries.openttd.org/openttd-releases/1.9.2/openttd-1.9.2-linux-debian-stretch-i386.deb
 
 #lib
 http://slackware.cs.utah.edu/pub/slackware/slackware-current/slackware/d/binutils-2.32-i586-1.txz
@@ -30,3 +36,4 @@ http://ftp.vim.org/ftp/os/Linux/distr/porteus/i586/current/modules/chromium-69.0
 http://slackware.uk/people/alien/sbrepos/current/x86/netsurf/netsurf-3.7-i486-1alien.tgz
 https://packages.slackonly.com/pub/packages/current-x86/network/netsurf/netsurf-3.3-i586-1_slonly.txz
 https://packages.slackonly.com/pub/packages/14.2-x86/network/light-firefox/light-firefox-48.0-i586-1_slonly.txz
+http://ftp.de.debian.org/debian/pool/main/i/icu/libicu57_57.1-6+deb9u2_i386.deb
