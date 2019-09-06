@@ -1,5 +1,6 @@
 #TODO LST CREENHOOT
 cd ~/.openttd/screenshot/
+rm 1.png
 new=$(ls -t1 | head -1)
 echo $new
 mv "$new" 1.png
