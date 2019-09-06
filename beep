@@ -1,0 +1,6 @@
+seq 1 1 10 | while read r ;do xdotool key Scroll_Lock; sleep 0.5;done
+seq 1 1 10 | while read r ;do xdotool key Scroll_Lock; sleep 1;done
+seq 1 1 10 | while read r ;do xdotool key Scroll_Lock; sleep 2;done
+seq 1 1 10 | while read r ;do xdotool key Scroll_Lock; sleep 5;done
+seq 1 1 10 | while read r ;do xdotool key Scroll_Lock; sleep 10;done
+xdotool key Scroll_Lock
