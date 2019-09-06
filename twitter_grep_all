@@ -1,0 +1,1 @@
+cat 1 | sed -e s/\*//g | sed -f /mnt/sda3/scripts/twitter_marks | sort -u| grep "*" --color

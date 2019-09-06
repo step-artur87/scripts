@@ -1,0 +1,5 @@
+>1
+cat /mnt/sda3/scripts/scripts-port/twitter_list_ru | while read r
+do
+lynx --display_charset UTF-8 --dump --width=1000 https://twitter.com/Vitauskas_A | grep -B10 replies | grep -v -F -f /mnt/sda3/scripts/scripts-port//ungrep >> 1
+done
