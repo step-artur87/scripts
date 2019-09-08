@@ -1,4 +1,13 @@
-mkdir /dev/shm/.cache
-cp .bash_history /mnt/sda7/dropbox/history$(date +%s)
-touch /dev/shm/places.sqlite /dev/shm/places.sqlite-wal /dev/shm/session.rdf
+#backup
+cp /mnt/sda3/history/.bash_history /mnt/sda3/history/.bash_history$(date +%s)
+
+#cache
+rm -r .cache
+ln -sf /dev/shm/ .cache
+
+#ln
+touch /mnt/sda3/history/.bash_history
+ln -sf /mnt/sda3/history/.bash_history .bash_history
+
+#crontab
 crontab crontab
