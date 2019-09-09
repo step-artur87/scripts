@@ -1,3 +1,4 @@
+echo ${0##*/}: begin
 mkdir /mnt/sda2/$(date +%d)
 cd /mnt/sda2/$(date +%d)
 watchclip http | while read r

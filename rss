@@ -1,3 +1,4 @@
+echo ${0##*/}: begin
 #download rss from 9gag/gif
 
 cd /dev/shm/
@@ -34,4 +35,4 @@ wget -q -nc -i list #download adds
 cat list4 | xargs -n2 rss2 #run rss2, if error add scripts_port to .bashrc
 rm 1 2 3 4 5 list list2 list3 list4
 rss_see
-
+echo ${0##*/}: end

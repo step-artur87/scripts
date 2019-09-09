@@ -1,3 +1,4 @@
+echo ${0##*/}: begin
 #sccript for rss
 #same like rss,  but wait 10 sec
 sleep 10s
@@ -5,3 +6,4 @@ cd /dev/shm/
 mpv * >> 1
 cat 1 | grep -E "Playing|binding" | grep -B1 binding | grep Playing | sed -e s/.*\ //g | tee 2 | xargs cp -t /home/disk/Folders/video/
 cat 2
+echo ${0##*/}: end
