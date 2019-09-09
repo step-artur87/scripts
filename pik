@@ -1,3 +1,4 @@
+echo ${0##*/}: begin	
 #lynx -nopause --display_charset UTF-8 -accept_all_cookies -use_mouse --list_inline --dump pikabu.ru \
 #> /dev/shm/pik
 #gedit /dev/shm/pik &
@@ -11,15 +12,4 @@ sleep 10
 light https://pikabu.ru/?page=4 &
 sleep 10
 light https://pikabu.ru/?page=5 &
-
-exit 0
-#todo del ?cid=...
-watchclip pikabu | while read r
-do
-echo "$r"
-light-firefox "$r"
-done
-
-
-## no inline waatchclip number and grep link not can becaause --list-inline can not open file
-##todo no site to stdout
+echo ${0##*/}: end

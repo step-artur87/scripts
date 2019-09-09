@@ -1,3 +1,4 @@
+echo ${0##*/}: begin
 while true
 do
 	r=$(top -n 1 -b | grep Mem |grep Swap | cut -c 60-62)
