@@ -1,9 +1,10 @@
+echo ${0##*/}: begin
 echo stream addres from cliipboard to s
 echo mouse net zapasy wstilka shtany shorty tb wuha rukavitsi
 mem &
 watchclip chaturbate | while read r
 do
-	echo get $r
+	echo ${0##*/}: get $r
 
 	#age
 	lynx --dump $r | grep -C4 Age:

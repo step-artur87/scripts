@@ -1,5 +1,5 @@
+echo ${0##*/}: begin
 #download pictures without chgrep_del
-echo chg:begin
 cd /dev/shm/
 mkdir chaturbate.com
 cd chaturbate.com
@@ -28,4 +28,4 @@ lynx --dump https://chaturbate.com/female-cams/?page=2 \
 >>1
 wget -q -i 1
 thunar /dev/shm/chaturbate.com/
-echo chb:end
+echo ${0##*/}: end

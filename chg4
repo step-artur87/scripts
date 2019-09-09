@@ -1,3 +1,4 @@
+echo ${0##*/}: begin
 echo press enter, choose picture
 
 #wget images

@@ -1,3 +1,4 @@
+echo ${0##*/}: begin
 echo picture addres from clipboard to s
 watchclip roomimg | while read r
 do
