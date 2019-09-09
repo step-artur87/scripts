@@ -1,3 +1,0 @@
-mkdir /dev/shm/
-
-xsel -o -b | sed -e s/?.*//g > 

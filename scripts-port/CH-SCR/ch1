@@ -1,9 +1,0 @@
-light https://chaturbate.com/20to30-cams/female/ &
-
-watchclip chaturbate | while read r
-#watchclip send to stack and cycle read from stck (when player close, read next vlue)
-#may be nt work
-do
-	echo get $r
-	echo get $r | perl -npe s/.*chaturbate.com\\///g | perl -npe s/\\///g | xargs -I num light chaturbate.com/fullvideo?b=num
-done
