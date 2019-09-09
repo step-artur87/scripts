@@ -1,3 +1,4 @@
+echo picture addres from clipboard to s
 watchclip roomimg | while read r
 do
 	s=$(echo $r | sed -e s/.*\\/ri\\///g -e s/.jpg.*//g)
