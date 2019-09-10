@@ -9,5 +9,6 @@ echo $i
 import -window root -geometry 160x128 $i.png #too little
 sleep 1.5s
 done
-#montage -geometry 160x128 * /home/disk/Folders/time/$(date +%s).png
+montage -geometry 160x128 * /dev/shm/time$(date +%s).png
 notify-send end
+#todo srtop prtsc roby sho e
