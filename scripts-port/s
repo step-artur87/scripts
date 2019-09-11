@@ -8,3 +8,4 @@ echo get $1
 
 	echo $(( $b - $a ))
 #	echo $(( $b - $a )) >> /mnt/sda7/dropbox/twitchlog
+echo ${0##*/}: end
