@@ -1,0 +1,7 @@
+#!/bin/sh
+while true
+do
+import -window root -monochrome "/dev/shm/$(date +%M).png" #sec
+sleep 1m
+done
+#when press enter, copy images

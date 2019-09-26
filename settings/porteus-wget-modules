@@ -37,3 +37,15 @@ http://slackware.uk/people/alien/sbrepos/current/x86/netsurf/netsurf-3.7-i486-1a
 https://packages.slackonly.com/pub/packages/current-x86/network/netsurf/netsurf-3.3-i586-1_slonly.txz
 https://packages.slackonly.com/pub/packages/14.2-x86/network/light-firefox/light-firefox-48.0-i586-1_slonly.txz
 http://ftp.de.debian.org/debian/pool/main/i/icu/libicu57_57.1-6+deb9u2_i386.deb
+
+#streamlink
+https://github.com/streamlink/streamlink/releases/download/1.2.0/streamlink-1.2.0.tar.gz
+http://slackware.cs.utah.edu/pub/slackware/slackware-current/slackware/d/python-pip-19.2.3-i586-1.txz
+https://github.com/streamlink/streamlink-twitch-gui/releases/download/v1.8.1/streamlink-twitch-gui-v1.8.1-linux32.tar.gz
+
+#tor
+https://packages.slackonly.com/pub/packages/current-x86/network/tor-browser/tor-browser-6.5.2-i586-2_slonly.txz
+https://www.torproject.org/dist/torbrowser/8.5.5/tor-browser-linux32-8.5.5_ru.tar.xz
+
+#dia
+http://ponce.cc/slackware/slackware-current/packages//dia-0.97.3-i586-2ponce.txz

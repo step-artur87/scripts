@@ -1,5 +1,6 @@
 #backup
 cp /mnt/sda3/history/.bash_history /mnt/sda3/history/.bash_history$(date +%s)
+cp /mnt/sda3/history/crontab /mnt/sda3/history/crontab$(date +%s)
 
 #cache
 rm -r .cache
@@ -8,6 +9,8 @@ ln -sf /dev/shm/ .cache
 #ln
 touch /mnt/sda3/history/.bash_history
 ln -sf /mnt/sda3/history/.bash_history .bash_history
+touch /mnt/sda3/history/crontab
+ln -sf /mnt/sda3/history/crontab crontab
 
 #crontab
 crontab crontab

@@ -3,7 +3,7 @@ mkdir /mnt/sda2/$(date +%d)
 cd /mnt/sda2/$(date +%d)
 watchclip http | while read r
 do
-	echo get $r | tee -a wwgetlog
+	echo $r | tee -a wwgetlog
 	wget $r
 done
 

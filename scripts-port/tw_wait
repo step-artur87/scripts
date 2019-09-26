@@ -1,0 +1,29 @@
+set -x
+echo "" | xsel -i -b
+watchclip twitch | while read r
+	do
+
+	jobs -l
+	echo $r
+	echo button $r
+	mousepad $r &> /dev/null 
+
+	jobs -l
+	echo button $r pressed
+	streamlink --stream-sorting-excludes ">720p" --player "mpv --no-audio --title=$r" $r best 2>&1 &
+
+	jobs -l
+
+	sleep 30
+	echo kill last $x
+
+	jobs -l
+	kill $x
+
+	jobs -l
+	echo save $!
+	x=$!
+done
+
+#poryadok ok
+#ve and kill if sucess streamlink

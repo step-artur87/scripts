@@ -3,3 +3,13 @@ git add *;git add -u
 perl -MURI::Escape
 md5sum *
 
+if mounted readonly (may be error)
+su
+   12  df --help
+   11  df -Th
+   14  mount | grep sda2
+   13  umount /mnt/sda2
+   14  mount | grep sda2
+   15  dosfsck --help
+   16  dosfsck -a /dev/sda2 ##watched bad file,  ctrl+Ced and deleted file
+   17  history

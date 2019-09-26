@@ -1,0 +1,7 @@
+sleep 3 &
+wait $!
+echo "I am waking up"
+sleep 4 &
+sleep 5 &
+wait
+echo "I woke up again"

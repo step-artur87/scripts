@@ -1,11 +1,11 @@
-echo ${0##*/}: begin
+#echo ${0##*/}: begin
 chmod +x /home/guest/.local/bin/streamlink
 echo get $1
 #	echo $1 >> /mnt/sda7/dropbox/twitchlog
-	a=$(date +"%s")
-	streamlink --stream-sorting-excludes ">720p" --player "mpv --no-audio" $1 best 2>&1 # | xargs -d '\n' -n1 notify-send -t 6000
-	b=$(date +"%s")
+#	a=$(date +"%s")
+	streamlink --stream-sorting-excludes ">720p" --player "mpv --no-audio --title=$2" $1 best 2>&1
+#	b=$(date +"%s")
 
-	echo $(( $b - $a ))
+#	echo $(( $b - $a ))
 #	echo $(( $b - $a )) >> /mnt/sda7/dropbox/twitchlog
-echo ${0##*/}: end
+#echo ${0##*/}: end

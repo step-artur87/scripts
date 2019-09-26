@@ -1,6 +1,6 @@
-for i in $(cat ~/scripts-port/twitter_list_ru)
+for i in $(cat /mnt/sda3/scripts/scripts-port/twitter_list_ru)
 do
 echo $i
-light $i
+light $i &
 read r
 done

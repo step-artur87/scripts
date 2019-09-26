@@ -2,8 +2,8 @@ echo ${0##*/}: begin
 while true
 do
 	r=$(top -n 1 -b | grep Mem |grep Swap | cut -c 60-62)
-	echo -ne '\b\b\b\b\r'
-	echo -ne $r\\t
+	#echo -ne '\b\b\b\b\r'
+	#echo -ne $r\\t
 	if test $r -lt 70
 	then
 		notify-send $r

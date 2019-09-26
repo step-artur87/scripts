@@ -1,0 +1,7 @@
+disable_audio
+killall opera
+killall palemoon
+killall light-firefox
+killall light
+rm -r /dev/shm/*
+/./mnt/sda3/factorio/bin/i386/factorio

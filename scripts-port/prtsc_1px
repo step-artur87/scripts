@@ -1,0 +1,1 @@
+import -window root -resize 5x4 /dev/shm/1.png && notify-send -t 1 ok # && xdotool mousemove_relative 100 100
