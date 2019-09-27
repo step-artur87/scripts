@@ -1,10 +1,10 @@
 echo ${0##*/}: begin
-#watchclip and open youtube with mpv in queue
 watchclip youtube | while read r
-#watchclip send to stack and cycle read from stck (when player close, read next vlue)
 do
 	echo get $r
-	cclive --exec 'vlc "%f" &'  $(xsel -o -b) # f & for paralel
-done
+	#cclive --exec 'vlc "%f" &'  $(xsel -o -b) # f & for paralel #lc long install
+	#cclive --exec 'mpv "%f" &'  $(xsel -o -b) # f & for paralel #libquvi: error: Could not find any subtitle export scripts in the path
 
-#youtube-watchclip
+	#s $r $r #player exit at several minutes
+ 	streamlink -O --stream-sorting-excludes ">720p" $r best | mpv --no-audio --title=$r - > /dev/null 2>&1 #freeze
+done

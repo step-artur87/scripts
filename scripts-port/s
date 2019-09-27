@@ -3,6 +3,7 @@ chmod +x /home/guest/.local/bin/streamlink
 echo get $1
 #	echo $1 >> /mnt/sda7/dropbox/twitchlog
 #	a=$(date +"%s")
+	tw-cooldown &
 	streamlink --stream-sorting-excludes ">720p" --player "mpv --no-audio --title=$2" $1 best 2>&1
 #	b=$(date +"%s")
 
