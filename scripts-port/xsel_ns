@@ -1,2 +1,0 @@
-notify-send -t 600000 "$(xsel -o -b)"
-
