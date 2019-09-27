@@ -1,29 +1,31 @@
-set -x
+chmod +x /home/guest/.local/bin/streamlink
+#set -x
 echo "" | xsel -i -b
 watchclip twitch | while read r
 	do
 
-	jobs -l
+#	jobs -l
 	echo $r
-	echo button $r
+#	echo button $r
 	mousepad $r &> /dev/null 
 
-	jobs -l
-	echo button $r pressed
-	streamlink --stream-sorting-excludes ">720p" --player "mpv --no-audio --title=$r" $r best 2>&1 &
+#	jobs -l
+#	echo button $r pressed
+	streamlink --stream-sorting-excludes ">720p" --player "mpv --no-audio --title=$r" $r best 2>&1 | colorecho GREEN &
 
-	jobs -l
+#	jobs -l
 
 	sleep 30
 	echo kill last $x
 
-	jobs -l
+#	jobs -l
 	kill $x
 
-	jobs -l
-	echo save $!
+#	jobs -l
+#	echo save $!
 	x=$!
 done
 
 #poryadok ok
 #ve and kill if sucess streamlink
+#test not green

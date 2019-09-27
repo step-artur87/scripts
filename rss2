@@ -1,5 +1,3 @@
 #funktion for rss
 #ln -sr $1 links/$2
-mv $1 $2 # test it
-
-
+mv $1 $(printf "%03d\n" $(shuf -i 0-999 -n1))_$2 # test it #random number 1-1000
