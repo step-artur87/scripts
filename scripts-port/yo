@@ -8,3 +8,4 @@ do
 	#s $r $r #player exit at several minutes
  	streamlink -O --stream-sorting-excludes ">720p" $r best | mpv --no-audio --title=$r - > /dev/null 2>&1 #freeze
 done
+#colorecho is complicated
