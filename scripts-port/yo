@@ -6,6 +6,6 @@ do
 	#cclive --exec 'mpv "%f" &'  $(xsel -o -b) # f & for paralel #libquvi: error: Could not find any subtitle export scripts in the path
 
 	#s $r $r #player exit at several minutes
- 	streamlink -O --stream-sorting-excludes ">720p" $r best | mpv --no-audio --title=$r - > /dev/null 2>&1 #freeze
+ 	streamlink -O --stream-sorting-excludes ">720p" $r best | mpv --no-audio --title=$r - >/dev/null 2>/dev/null #freeze
 done
 #colorecho is complicated
