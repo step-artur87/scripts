@@ -14,9 +14,14 @@ unset y
 
 # Setup shell prompt for root <wread and fanthom>
 PS1='\[\033[01;32m\]t\l-\u:\[\033[01;32m\]\w\$\[\033[00m\] '
+#PS1='\e[0;36m\
+#$(jobs | sed -e "s/.*                 /    /g")\
+#\e[0;32m\
+#\n\
+#t\l-\u:\w $\
+#\e[0m'
 
 PS2='> ' #while true \n >
-
 alias mcedit='TERM=xterm-new mcedit'
 alias ns='netsurf-gtk'
 alias li='light-firefox'
@@ -25,9 +30,9 @@ alias bc='bc -q'
 alias di='git diff --word-diff=color --word-diff-regex=.> /dev/shm/1; cat /dev/shm/1
 '
 alias lo='git log --all --graph --oneline --no-color'
+alias co='git commit -v -m $(git diff --name-only --cached | xargs | sed -e s/\\s/----/g)'
 
-
-export PATH="$PATH:/mnt/sda3/scripts:/home/guest/.local/bin/:t1-guest:/mnt/sda3/scripts/scripts-port/:/mnt/sda3/scripts/:/mnt/sda2/modules/light-firefox-48.0-i586-1_slonly/opt/light-firefox-48.0/usr/local/lib/light:/mnt/sda2/modules/opera-45.0.2552.898-i586-1/usr/lib/i386-linux-gnu/opera/:/mnt/sda2/modules/streamlink-twitch-gui/"
+export PATH="$PATH:/mnt/sda3/scripts:/home/guest/.local/bin/:t1-guest:/mnt/sda3/scripts/scripts-port/:/mnt/sda3/scripts/:/mnt/sda2/modules/light-firefox-48.0-i586-1_slonly/opt/light-firefox-48.0/usr/local/lib/light:/mnt/sda2/modules/opera-45.0.2552.898-i586-1/usr/lib/i386-linux-gnu/opera/:/mnt/sda2/modules/streamlink-twitch-gui/:/mnt/sda3/ch/"
 setxkbmap -option ctrl:nocaps
 
 #infinity hist
