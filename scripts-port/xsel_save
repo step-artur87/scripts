@@ -1,4 +1,5 @@
 #save clipboard
+mkdir /mnt/sda2/txt
 d=$(date +%s)
-xsel -o -b >  /mnt/sda7/dropbox/$d.pgn
+xsel -o -b >  /mnt/sda2/txt/$d.pgn || notify-send error
 #xboard $d.pgn

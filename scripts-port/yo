@@ -1,10 +1,10 @@
 echo ${0##*/}: begin
-watchclip youtube | while read r
+watchclip invidio | while read r
 do
 	echo get $r
 	#cclive --exec 'vlc "%f" &'  $(xsel -o -b) # f & for paralel #lc long install
 	#cclive --exec 'mpv "%f" &'  $(xsel -o -b) # f & for paralel #libquvi: error: Could not find any subtitle export scripts in the path
-
+	r=$(echo $r  | sed s/invidio.us/youtube.com/g)
 	#s $r $r #player exit at several minutes
  	streamlink -O --stream-sorting-excludes ">768p" $r best | mpv --no-audio --title=$r - >/dev/null 2>/dev/null #freeze
 done

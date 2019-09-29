@@ -1,0 +1,6 @@
+for i in $(cat /mnt/sda3/scripts/scripts-port/twitter_list_ua)
+do
+echo $i
+light $i &
+read r
+done
