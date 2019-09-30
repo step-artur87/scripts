@@ -1,31 +1,17 @@
 echo ${0##*/}: begin
-#download rss from 9gag/gif
+rss_get
+cd /dev/shm/rss
+cut -f 1 list > links
 
-cd /dev/shm/
-rm * #rem w/o folders ##1not list
-curl "https://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2" >> 1 #get rss file https://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2
-
-cat 1 \
-| uniq \
-| grep webm \
-| tee 2 \
-| sed -e s/.*src\=\"//g  -e s/webm.*/webm/g \
- > list #get url list
-
-cat 1 \
-| grep title \
-| sed -e s/.*\<title\>//g -e s/\<.*//g -e "s/ /_/g" -e s/\:/_/g -e s/\;/_/g -e s/\#/_/g \
->list2 #egt title list
-
-cat list \
-| sed -e s/.*\\///g  \
-> list3 #get filename list
-
-paste list3 list2 > list4 # get filename title list
 rss_see2 &
-wget -q -nc -i list #download adds
+wget -q -nc -i links #download adds
 
-cat list4 | xargs -n2 rss2 #run rss2, if error add scripts_port to .bashrc
-rm 1 2 3 4 5 list list2 list3 list4
+cat list | sed -e s/.*\\///g | xargs -n2 rss2 #run rss2, if error add scripts_port to .bashrc
+rm list links
 rss_see
 echo ${0##*/}: end
+#|||| checlkout -f
+
+#no sed there if filenme with /
+#uncomment curl
+#tail to test

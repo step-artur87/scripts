@@ -8,7 +8,7 @@ mkdir rss
 cd rss
 #find /dev/shm/rss/* -not -name 'list' -delete
 
-#curl "https://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2" >> 1 #get rss file 
+curl "https://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2" >> 1 #get rss file 
 
 cat 1 \
 | grep webm \
