@@ -2,20 +2,19 @@ echo ${0##*/}: begin
 #download rss from 9gag/gif
 
 cd /dev/shm/
-rm * #rem w/o folders
+rm * #rem w/o folders ##1not list
 curl "https://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2" > 1 #get rss file https://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2
 
 cat 1 \
-| tee 2 \
 | grep webm \
-| tee 3 \
+| tee 2 \
 | perl -npe s/.*src\=\"//g \
-| tee 4 \
+| tee 3 \
 | perl -npe s/webm.*/webm/g \
-| tee 5 \
+| tee 4 \
  > list #get url list
 
-cat 2 \
+cat 1 \
 | grep title \
 | perl -npe s/.*\<title\>//g \
 | perl -npe s/\<.*//g \
@@ -25,7 +24,8 @@ cat 2 \
 | perl -npe "s/\#/_/g" \
 >list2 #egt title list
 
-cat list | perl -npe s/.*\\///g  \
+cat list \
+| perl -npe s/.*\\///g  \
 > list3 #get filename list
 
 paste list3 list2 > list4 # get filename title list
