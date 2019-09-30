@@ -8,20 +8,12 @@ curl "https://9gag-rss.com/api/rss/get?code=9GAGGIF&format=2" > 1 #get rss file 
 cat 1 \
 | grep webm \
 | tee 2 \
-| sed -e s/.*src\=\"//g \
-| tee 3 \
-| sed -e s/webm.*/webm/g \
-| tee 4 \
+| sed -e s/.*src\=\"//g  -e s/webm.*/webm/g \
  > list #get url list
 
 cat 1 \
 | grep title \
-| sed -e s/.*\<title\>//g \
-| sed -e s/\<.*//g \
-| sed -e "s/ /_/g" \
-| sed -e "s/\:/_/g" \
-| sed -e "s/\;/_/g" \
-| sed -e "s/\#/_/g" \
+| sed -e s/.*\<title\>//g -e s/\<.*//g -e "s/ /_/g" -e s/\:/_/g -e s/\;/_/g -e s/\#/_/g \
 >list2 #egt title list
 
 cat list \
