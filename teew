@@ -1,0 +1,3 @@
+cd /mnt/sda2/modules/teeworlds-0.7.3.1-linux_x86/
+./teeworlds
+grep tee log* >> /mnt/sda3/scripts/settings-auto-backup/teeworlds$(date +%s)
