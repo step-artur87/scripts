@@ -2,6 +2,6 @@
 while true
 do
 import -window root "/dev/shm/$(date +%s).png" 
-
-sleep 10s
+notify-send ok
+sleep 4s
 done

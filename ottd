@@ -1,0 +1,7 @@
+cat /home/guest/.openttd/openttd.cfg | grep -B1000 client_name | grep -v client_name > /dev/shm/tmpB
+cat /home/guest/.openttd/openttd.cfg | grep -A1000 client_name | grep -v client_name > /dev/shm/tmpA
+cat /dev/shm/tmpB > /home/guest/.openttd/openttd.cfg
+echo "client_name = $1" >> /home/guest/.openttd/openttd.cfg
+cat /dev/shm/tmpA >> /home/guest/.openttd/openttd.cfg
+cat /home/guest/.openttd/openttd.cfg | grep -C10  client_name
+#openttd

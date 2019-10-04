@@ -14,3 +14,4 @@ ln -sf /mnt/sda3/history/crontab crontab
 
 #crontab
 crontab crontab
+ring &
