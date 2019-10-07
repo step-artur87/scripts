@@ -2,7 +2,7 @@ echo ${0##*/}: begin
 #watch all files at /dev/shm/ and if press c, than coppy to ~
 ##if press c when plat scipt copy file
 ##tested	
-cd /dev/shm/
+cd /dev/shm/rss
 mpv * >> 1
 cat 1 | grep -E "Playing|binding" | grep -B1 binding | grep Playing | sed -e s/.*\ //g | tee 2 | xargs cp -t /home/disk/Folders/video/
 cat 2
