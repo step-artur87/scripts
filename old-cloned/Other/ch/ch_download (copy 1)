@@ -1,0 +1,31 @@
+echo ${0##*/}: begin
+#download pictures without chgrep_del
+cd /dev/shm/
+mkdir chaturbate.com
+cd chaturbate.com
+rm  /dev/shm/chaturbate.com/* #rm  /dev/shm/*rm  /dev/shm/*rm  /dev/shm/*rm  /dev/shm/*rm  /dev/shm/*
+lynx --dump https://chaturbate.com/20to30-cams/female/ \
+| grep chaturbate.com \
+| grep -v -P "\/\/.*\/.*\/.*\/" \
+| grep  -P "\/\/chaturbate.com\/.*\/$" \
+| grep -v cams \
+| perl -npe "s/.* //g" \
+| sort | uniq \
+|sed -e s/chaturbate.com/roomimg.stream.highwebmedia.com\\/ri/g \
+|sed -e s/\$/.jpg/g \
+|sed -e s/\\/.jpg/.jpg/g \
+>1
+lynx --dump https://chaturbate.com/female-cams/?page=2 \
+| grep chaturbate.com \
+| grep -v -P "\/\/.*\/.*\/.*\/" \
+| grep  -P "\/\/chaturbate.com\/.*\/$" \
+| grep -v cams \
+| perl -npe "s/.* //g" \
+| sort | uniq \
+|sed -e s/chaturbate.com/roomimg.stream.highwebmedia.com\\/ri/g \
+|sed -e s/\$/.jpg/g \
+|sed -e s/\\/.jpg/.jpg/g \
+>>1
+wget -q -i 1
+thunar /dev/shm/chaturbate.com/
+echo ${0##*/}: end
