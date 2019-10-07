@@ -1,0 +1,8 @@
+cd /dev/shm
+while read r
+do
+echo $r | sed -e s/chaturbate.com/roomimg.stream.highwebmedia.com\\/ri/g |sed -e s/\$/.jpg/g | sed -e s/\\/.jpg/.jpg/g | xargs wget -q &
+echo $r >> /dev/shm/sh
+echo $r #need for other sfcripts
+done 
+

@@ -1,0 +1,18 @@
+echo ${0##*/}: begin
+echo press enter, choose picture
+#netsurf http://joyreactor.cc/tag/%D0%AD%D1%80%D0%BE%D1%82%D0%B8%D0%BA%D0%B0/best/317 &
+#wget images
+ch_download
+
+#get clipboard to plyer
+ch_stream & #test some launch in one term
+
+while true
+do
+echo натиснути на картынку, якшо зразу, то s ctrl+v
+#window schange and to clipbord
+xprop | grep -i _NET_WM_NAME | grep -i utf | grep jpg | sed -e s/.jpg.*//g -e s/.*\"/chaturbate\.com\\//g | xsel -i -b
+
+read r
+done
+#todo age at xprop

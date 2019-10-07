@@ -1,0 +1,21 @@
+echo ${0##*/}: begin
+echo stream addres from cliipboard to s
+echo mouse net zapasy wstilka shtany shorty tb wuha rukavitsi
+echo "" | xsel -i -b
+cd /dev/shm
+mem > /dev/null &
+watchclip chaturbate | notify_echo | ch_save | while read r
+do
+	echo ${0##*/}: get $r #| colorecho BLUE
+
+	#age
+	lynx --dump $r | grep -C4 Age: | grep -v -e "^$" | tee /dev/shm/1| colorecho RED #&
+	t=$(cat /dev/shm/1 | grep -A1 Age: | grep -v Age: | sed -e s/\\s//g)
+	#launch
+	echo $r----$t
+	s $r $r----$t | colorecho GREEN
+done
+#test t ( r ) ok
+#test s
+#||no master
+#del sapce
