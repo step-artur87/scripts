@@ -1,3 +1,4 @@
+netsurf bash.im/random &
 chmod +x /home/guest/.local/bin/streamlink
 #set -x
 echo "" | xsel -i -b

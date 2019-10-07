@@ -1,3 +1,4 @@
+netsurf bash.im/random &
 sleep 3 &
 wait $!
 echo "I am waking up"

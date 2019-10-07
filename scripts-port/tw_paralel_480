@@ -8,5 +8,5 @@ watchclip twitch | while read r
 do
 	echo get $r
 	mousepad $r
-	s $r &
+	streamlink --stream-sorting-excludes ">480p" --player "mpv --no-audio --title=$2 " $r best 2>&1 &
 done

@@ -1,4 +1,6 @@
 killall light
+netsurf bash.im/random &
+opera &
 lynx --dump --listonly pikabu.ru/top-comments | grep story | sed -e s/?.*//g |sed -e s/.*https/https/g |  sort -u > 1
 for i in $(cat 1)
 do

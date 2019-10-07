@@ -4,4 +4,4 @@ cat /dev/shm/tmpB > /home/guest/.openttd/openttd.cfg
 echo "client_name = $1" >> /home/guest/.openttd/openttd.cfg
 cat /dev/shm/tmpA >> /home/guest/.openttd/openttd.cfg
 cat /home/guest/.openttd/openttd.cfg | grep -C10  client_name
-#openttd
+openttd
